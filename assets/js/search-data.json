@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Tools and Equipment",
-            "content": "https://github.com/deimie/CSA-individual/issues/1 .",
-            "url": "https://deimie.github.io/fastpages/markdown/2022/08/22/Tools-and-Equipment.html",
-            "relUrl": "/markdown/2022/08/22/Tools-and-Equipment.html",
+            "title": "Java hello page",
+            "content": "// Define Static Method within a Class public class HelloStatic { // Java standard runtime entry point public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } // A method call allows us to execute code that is wrapped in Class HelloStatic.main(null); // Class prefix allows reference of Static Method . Hello World! .",
+            "url": "https://deimie.github.io/fastpages/2022/08/22/javahello.html",
+            "relUrl": "/2022/08/22/javahello.html",
             "date": " • Aug 22, 2022"
         }
         
@@ -13,11 +13,11 @@
   
     
         ,"post1": {
-            "title": "Java hello page",
-            "content": "// Define Static Method within a Class public class HelloStatic { // Java standard runtime entry point public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } // A method call allows us to execute code that is wrapped in Class HelloStatic.main(null); // Class prefix allows reference of Static Method . Hello World! .",
-            "url": "https://deimie.github.io/fastpages/2022/07/21/javahello.html",
-            "relUrl": "/2022/07/21/javahello.html",
-            "date": " • Jul 21, 2022"
+            "title": "Tools and Equipment",
+            "content": "https://github.com/deimie/CSA-individual/issues/1 .",
+            "url": "https://deimie.github.io/fastpages/markdown/2022/08/22/Tools-and-Equipment.html",
+            "relUrl": "/markdown/2022/08/22/Tools-and-Equipment.html",
+            "date": " • Aug 22, 2022"
         }
         
     
