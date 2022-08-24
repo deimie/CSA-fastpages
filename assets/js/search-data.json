@@ -51,7 +51,7 @@
   
       ,"page2": {
           "title": "",
-          "content": "Welcome to my page! . Posts .",
+          "content": "Welcome to my page! . &lt;img src=”images/logo.png” height:200px width 200px&gt; . Posts .",
           "url": "https://deimie.github.io/fastpages/",
           "relUrl": "/",
           "date": ""
