@@ -62,7 +62,7 @@
   
       ,"page3": {
           "title": "Notes",
-          "content": "Syntax for Jupyter Notebook .",
+          "content": "Syntax for Jupyter Notebook Header . .",
           "url": "https://deimie.github.io/fastpages/notes/",
           "relUrl": "/notes/",
           "date": ""
