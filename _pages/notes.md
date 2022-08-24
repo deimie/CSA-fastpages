@@ -4,5 +4,4 @@ title: Notes
 permalink: /notes/
 ---
 
-# Notes for AP CSA
-
+### Syntax for Jupyter Notebook
