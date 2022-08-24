@@ -60,6 +60,17 @@
   
 
   
+      ,"page3": {
+          "title": "Notes",
+          "content": "Notes for AP CSA .",
+          "url": "https://deimie.github.io/fastpages/notes/",
+          "relUrl": "/notes/",
+          "date": ""
+      }
+      
+  
+
+  
   
 
   
@@ -77,7 +88,7 @@
   
 
   
-      ,"page9": {
+      ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://deimie.github.io/fastpages/robots.txt",
