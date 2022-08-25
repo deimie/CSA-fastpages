@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Innovation - Week 1",
+            "content": "Innovation - Week 1 .",
+            "url": "https://deimie.github.io/fastpages/markdown/2022/08/29/Innovation-Week-1.html",
+            "relUrl": "/markdown/2022/08/29/Innovation-Week-1.html",
+            "date": " • Aug 29, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Python Notebook",
             "content": "n = int(input(&#39;Type the nth term in the fibonacci sequence: &#39;)) def fibonacci(n): a=0 b=1 fibList = [0] # there are no negative nth terms allowed if n &lt;=0: print(&#39;Input must be greater than 0.&#39;) fibonacci() # restart the program # instead of using logic for the whole sequence, it&#39;s easier to make the 1st term always return 0. elif n == 1: print(fibList) return else: fibList.append(1) # for loop will go through each number of the sequence and append them into the list. for i in range(2,n): c = a + b a = b b = c fibList.append(c) print(fibList) # print final result fibonacci(n) . [0, 1, 1, 2, 3] .",
             "url": "https://deimie.github.io/fastpages/2022/08/22/pythonNotebook.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Java Notebook",
             "content": "// Define Static Method within a Class public class HelloStatic { // Java standard runtime entry point public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } // A method call allows us to execute code that is wrapped in Class HelloStatic.main(null); // Class prefix allows reference of Static Method . Hello World! .",
             "url": "https://deimie.github.io/fastpages/2022/08/22/javaNotebook.html",
@@ -23,11 +34,11 @@
     
   
     
-        ,"post2": {
-            "title": "Tools and Equipment",
-            "content": "https://github.com/deimie/CSA-individual/issues/1 .",
-            "url": "https://deimie.github.io/fastpages/markdown/2022/08/22/Tools-and-Equipment.html",
-            "relUrl": "/markdown/2022/08/22/Tools-and-Equipment.html",
+        ,"post3": {
+            "title": "Tool Setup - Week 0",
+            "content": "Tool Setup - Week 0 .",
+            "url": "https://deimie.github.io/fastpages/markdown/2022/08/22/Tool-Setup-Week-0.html",
+            "relUrl": "/markdown/2022/08/22/Tool-Setup-Week-0.html",
             "date": " • Aug 22, 2022"
         }
         
