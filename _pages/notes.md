@@ -4,5 +4,6 @@ title: Notes
 permalink: /notes/
 ---
 
-### Syntax for Jupyter Notebook Header
-![Screen Shot 2022-08-24 at 2 13 45 PM](https://user-images.githubusercontent.com/24465360/186524975-f3eca2d3-f2bb-4784-ac64-2e81c18e4f32.png)
+### Syntax for Front Matter
+
+![Screen Shot 2022-08-25 at 1 58 36 PM](https://user-images.githubusercontent.com/24465360/186767931-d47f4cb3-6c7c-4d68-8b51-8bd6ee659f86.png)
