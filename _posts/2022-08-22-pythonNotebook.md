@@ -1,5 +1,4 @@
 ---
-keywords: fastai
 title: Python Notebook
 nb_path: _notebooks/2022-08-22-pythonNotebook.ipynb
 layout: notebook
