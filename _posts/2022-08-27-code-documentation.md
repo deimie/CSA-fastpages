@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: CSA Week 1
+description: A rundown of each code.org lesson that I have completed
 categories: [markdown]
-title: Innovation - Week 1
+title: Code.org Documentation
 image: images/jupyter.png
 ---
 
