@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: A rundown of each code.org lesson that I have completed
 categories: [markdown]
-title: Code.org Documentation
+title: Code Documentation
 image: images/jupyter.png
 ---
 
