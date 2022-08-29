@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Bash",
-            "content": "cd vscode ls . Input In [1] cd vscode ^ SyntaxError: invalid syntax .",
+            "content": "java --version . NameError Traceback (most recent call last) /Users/evan/vscode/fastpages/fastpages/_notebooks/2022-08-25-bash.ipynb Cell 2 in &lt;cell line: 1&gt;() -&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/evan/vscode/fastpages/fastpages/_notebooks/2022-08-25-bash.ipynb#W1sZmlsZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt; java --version NameError: name &#39;java&#39; is not defined .",
             "url": "https://deimie.github.io/fastpages/2022/08/25/bash.html",
             "relUrl": "/2022/08/25/bash.html",
             "date": " • Aug 25, 2022"
