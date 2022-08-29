@@ -10,7 +10,7 @@ image: images/jupyter.png
 ## Lesson 1
 Lesson 1 is simply an introduction to the course. It talks about how CSA students are taught to think similarly to software engineers, and how we will continue to grow form this.
 
- ## Lesson 2
+## Lesson 2
  In lesson 2, we learn about the basic structure of a java header, as well as some basic syntax. Below is a basic java header.
  ```
 public class className {
