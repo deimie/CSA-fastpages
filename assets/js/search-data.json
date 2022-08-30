@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Bash",
-            "content": "java --version . NameError Traceback (most recent call last) /Users/evan/vscode/fastpages/fastpages/_notebooks/2022-08-25-bash.ipynb Cell 2 in &lt;cell line: 1&gt;() -&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/evan/vscode/fastpages/fastpages/_notebooks/2022-08-25-bash.ipynb#W1sZmlsZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt; java --version NameError: name &#39;java&#39; is not defined .",
+            "content": "cd vscode ls . bash: cd: vscode: No such file or directory 2022-08-22-javaNotebook.ipynb README.md 2022-08-22-pythonNotebook.ipynb ghtop_images 2022-08-25-bash.ipynb my_icons 2022-08-26-primitives.ipynb . python --version python2 --version java --version javac --version . Python 3.9.12 Python 2.7.18 openjdk 17.0.4 2022-07-19 OpenJDK Runtime Environment Temurin-17.0.4+8 (build 17.0.4+8) OpenJDK 64-Bit Server VM Temurin-17.0.4+8 (build 17.0.4+8, mixed mode, sharing) javac 17.0.4 . jupyter kernelspec list . Available kernels: bash /Users/evan/Library/Jupyter/kernels/bash java /Users/evan/Library/Jupyter/kernels/java javascript /Users/evan/Library/Jupyter/kernels/javascript python3 /Users/evan/opt/anaconda3/share/jupyter/kernels/python3 .",
             "url": "https://deimie.github.io/fastpages/2022/08/25/bash.html",
             "relUrl": "/2022/08/25/bash.html",
             "date": " • Aug 25, 2022"
@@ -93,17 +93,6 @@
   
 
   
-      ,"page3": {
-          "title": "Notes",
-          "content": "Capture Information Plan . I plan to store all new information that I learn in this notes page for the rest of the trimester. This will mostly be the info I learn about java from code.org or personal research . . Syntax for Front Matter . . . Code.org Documentation . Lesson 1 . Lesson 1 is simply an introduction to the course. It talks about how CSA students are taught to think similarly to software engineers, and how we will continue to grow form this. . Lesson 2 . In lesson 2, we learn about the basic structure of a java header, as well as some basic syntax. Below is a basic java header. . public class className { public static void main(String[] args) { } } . The main method is the most common method used as an entry point to any java program. | The public method is simply a method that makes the scope of the code global. It’s kind of in the name. | static means that there will only be one type of this method and that it will be shared. Basically, we can call the main method multiple times without creating a new object. | void means there will be nothing returned from the main method. | String[] args - The main method’s argument is an array of string type. THis allows the method to accept command line arguments, which are stored as strings in this variable. args can be changed. | . Lesson 3 . To instatiate a new object you use the syntax: className objectName = new className(); . Lesson 4 . Lesson 4 was just lots of tedious programming challenges using the things we already learned from the first 3 lessons. There were 4 different challenges where we controlled a painter. These challenges made it almost muscle memory to call objects in java. . Lesson 5 . Lesson 5 was similar to lesson 4, by having many challnges to complete, except now the if statement was introduced. .",
-          "url": "https://deimie.github.io/fastpages/notes/",
-          "relUrl": "/notes/",
-          "date": ""
-      }
-      
-  
-
-  
   
 
   
@@ -121,7 +110,7 @@
   
 
   
-      ,"page10": {
+      ,"page9": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://deimie.github.io/fastpages/robots.txt",

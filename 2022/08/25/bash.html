@@ -67,7 +67,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/notes/">Notes</a><a class="page-link" href="/fastpages/search/">Search</a></div>
+        <div class="trigger"><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/search/">Search</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -134,7 +134,8 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">java</span> <span class="o">--</span><span class="n">version</span>
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> vscode
+ls
 </pre></div>
 
     </div>
@@ -146,14 +147,87 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/evan/vscode/fastpages/fastpages/_notebooks/2022-08-25-bash.ipynb Cell 2</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/evan/vscode/fastpages/fastpages/_notebooks/2022-08-25-bash.ipynb#W1sZmlsZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> java --version
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>bash: cd: vscode: No such file or directory
+2022-08-22-javaNotebook.ipynb	README.md
+2022-08-22-pythonNotebook.ipynb	ghtop_images
+2022-08-25-bash.ipynb		my_icons
+2022-08-26-primitives.ipynb
+</pre>
+</div>
+</div>
 
-<span class="ansi-red-fg">NameError</span>: name &#39;java&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>python --version
+python2 --version
+java --version
+javac --version
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Python 3.9.12
+Python 2.7.18
+openjdk 17.0.4 2022-07-19
+OpenJDK Runtime Environment Temurin-17.0.4+8 (build 17.0.4+8)
+OpenJDK 64-Bit Server VM Temurin-17.0.4+8 (build 17.0.4+8, mixed mode, sharing)
+javac 17.0.4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>jupyter kernelspec list
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Available kernels:
+  bash          /Users/evan/Library/Jupyter/kernels/bash
+  java          /Users/evan/Library/Jupyter/kernels/java
+  javascript    /Users/evan/Library/Jupyter/kernels/javascript
+  python3       /Users/evan/opt/anaconda3/share/jupyter/kernels/python3
+</pre>
 </div>
 </div>
 
