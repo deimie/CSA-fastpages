@@ -43,3 +43,9 @@ Lesson 4 was just lots of tedious programming challenges using the things we alr
 
 ### Lesson 5
 Lesson 5 was similar to lesson 4, by having many challnges to complete, except now the ```if``` statement was introduced. 
+
+---
+
+## Class Notes
+
+#### Week 2 - Using Objects
