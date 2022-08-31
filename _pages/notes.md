@@ -65,6 +65,12 @@ public void methodName(){ //create a method
 variableName.methodName(); //to call the method
 ```
 
+Important sidenote: In javalabs on code.org, you have to extend your subclass to the superclass "Painter" in order to use most of the prebuilt features.
+
+### Lesson 8
+In lesson 8, we learn about commenting code using ```//``` or ```/* */```. We also learn about commiting files, which are then stored in the backpack. These files can be imported once again from the backpack. We learn about opening code reviews where peers can see and comment on our code (But these have to be enabled by the teacher, which they are presently not). 
+
+
 ---
 
 ## Class Notes
