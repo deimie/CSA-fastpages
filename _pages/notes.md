@@ -44,6 +44,27 @@ Lesson 4 was just lots of tedious programming challenges using the things we alr
 ### Lesson 5
 Lesson 5 was similar to lesson 4, by having many challnges to complete, except now the ```if``` statement was introduced. 
 
+### Lesson 6
+We learned about subclasses and superclasses. A subclass is a class that has its own attributes, but will inherit all of the attributes from a superclass. The way to construct a subclass is below:
+```
+public class SubClassName extends SuperClassName {
+  public SubClassName() {
+    super();
+  }
+
+}
+```
+
+### Lesson 7
+In lesson 7 we learn about creating new methods. The way we can do this is below:
+```
+public void methodName(){ //create a method
+  // put code that you want the method to run
+}
+
+variableName.methodName(); //to call the method
+```
+
 ---
 
 ## Class Notes
