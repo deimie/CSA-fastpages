@@ -4,6 +4,8 @@ title: Notes
 permalink: /notes/
 ---
 
+{% include toc.html %}
+
 ## Capture Information Plan
 I plan to store all new information that I learn in this notes page for the rest of the trimester. This will mostly be the info I learn about java from code.org or personal research
 
