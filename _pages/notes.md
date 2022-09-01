@@ -22,7 +22,8 @@ Lesson 1 is simply an introduction to the course. It talks about how CSA student
 
 ### Lesson 2
  In lesson 2, we learn about the basic structure of a java header, as well as some basic syntax. Below is a basic java header.
- ```
+
+ ```java
 public class className {
   public static void main(String[] args) {
   
@@ -47,7 +48,8 @@ Lesson 5 was similar to lesson 4, by having many challnges to complete, except n
 
 ### Lesson 6
 We learned about subclasses and superclasses. A subclass is a class that has its own attributes, but will inherit all of the attributes from a superclass. The way to construct a subclass is below:
-```
+
+```java
 public class SubClassName extends SuperClassName {
   public SubClassName() {
     super();
@@ -58,7 +60,8 @@ public class SubClassName extends SuperClassName {
 
 ### Lesson 7
 In lesson 7 we learn about creating new methods. The way we can do this is below:
-```
+
+```java
 public void methodName(){ //create a method
   // put code that you want the method to run
 }
@@ -75,5 +78,3 @@ In lesson 8, we learn about commenting code using ```//``` or ```/* */```. We al
 ---
 
 ## Class Notes
-
-#### Week 2 - Using Objects
