@@ -3,6 +3,7 @@ title: Primitives
 nb_path: _notebooks/2022-08-26-primitives.ipynb
 layout: notebook
 image: images/jupyter.png
+categories: [markdown]
 ---
 
 <!--
