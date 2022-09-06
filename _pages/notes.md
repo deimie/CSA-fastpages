@@ -2,6 +2,7 @@
 layout: page
 title: Notes
 permalink: /notes/
+toc: true
 ---
 
 {% include toc.html %}
@@ -76,6 +77,26 @@ Important sidenote: In javalabs on code.org, you have to extend your subclass to
 ### Lesson 8
 In lesson 8, we learn about commenting code using ```//``` or ```/* */```. We also learn about commiting files, which are then stored in the backpack. These files can be imported once again from the backpack. We learn about opening code reviews where peers can see and comment on our code (But these have to be enabled by the teacher, which they are presently not). 
 
+### Lesson 9
+In this lesson the ```while``` loop was introduced. Everything else was very standard, and simply challenged us to use the while loop.
+
+### Lesson 10
+This lesson introduced logic gates. ```!``` is the NOT operator. ```&&``` is the AND operator.
+
+### Lesson 11
+This lesson was just a few basic debugging chhallenges. We would look as dysfunctional code and try to figure out what was wrong with out. Nothing new in this lesson, just review.
+
+### Lesson 12
+This lesson challenged us to make new slighty more complicated methods, but once again, nothing really new.
+
+### Lesson 13
+I could be entirely misunderstanding, but I could not for the life of me figure out this lesson. It seemed bugged, as there was no paint for the painter to use. I did some research and I'm quite lost, but the concept was just to create and save a method in a new file so it could be used across projects.
+
+### Lesson 14
+This lesson branched off 13 a bit with the concept. To be honest the last few lessons are very repetitive and no new info was really taught.
+
+### Lesson 15
+The final lesson was simply a FRQ asking about your best software engineer qualitly. Not a real lesson.
 
 ---
 
