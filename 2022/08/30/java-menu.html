@@ -179,12 +179,9 @@ window.onload = wrap_img;
     <span class="kd">private</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
         <span class="c1">//System.out.println commands below is used to present a Menu to the user. </span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;-------------------------&quot;</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Choose from these choices&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Select A Function&quot;</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;-------------------------&quot;</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;1 - Say Hello&quot;</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;2 - Output colors&quot;</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;3 - Loading in color&quot;</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;4 - 4th Row&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;1 - Basic Addition&quot;</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;0 - Quit&quot;</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;-------------------------\n&quot;</span><span class="p">);</span>
     <span class="p">}</span>
@@ -195,30 +192,23 @@ window.onload = wrap_img;
 
         <span class="k">switch</span> <span class="p">(</span><span class="n">selection</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// Switch or Switch/Case is Control Flow statement and is used to evaluate the user selection</span>
             <span class="k">case</span> <span class="mi">0</span><span class="p">:</span>  
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Goodbye, World!&quot;</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;See you later!&quot;</span><span class="p">);</span>
                 <span class="n">quit</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
                 <span class="k">break</span><span class="p">;</span>
             <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
+                <span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Basic Addition ---&quot;</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Please select first number: &quot;</span><span class="p">);</span>
+                <span class="kt">int</span> <span class="n">choice1</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span> <span class="c1">//</span>
+
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Please select second number: &quot;</span><span class="p">);</span>
+                <span class="kt">int</span> <span class="n">choice2</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Your sum is: &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="n">choice1</span> <span class="o">+</span> <span class="n">choice2</span><span class="p">));</span>
+                <span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+
                 <span class="k">break</span><span class="p">;</span>
-            <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
-                <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">COLORS</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>  <span class="c1">// loop through COLORS array</span>
-                    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">COLORS</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">ANSI</span><span class="o">]</span> <span class="o">+</span> <span class="n">COLORS</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">NAME</span><span class="o">]</span><span class="p">);</span>
                 <span class="k">break</span><span class="p">;</span>
-            <span class="k">case</span> <span class="mi">3</span><span class="p">:</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Loading...&quot;</span><span class="p">);</span>
-                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// fixed length loading bar</span>
-                    <span class="kt">int</span> <span class="n">random</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="n">COLORS</span><span class="p">.</span><span class="na">length</span><span class="p">);</span>  <span class="c1">// random logic</span>
-                    <span class="k">try</span> <span class="p">{</span>
-                        <span class="n">Thread</span><span class="p">.</span><span class="na">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>  <span class="c1">// delay for loading</span>
-                    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-                        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
-                    <span class="p">}</span>
-                    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">COLORS</span><span class="o">[</span><span class="n">random</span><span class="o">][</span><span class="n">ANSI</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot;#&quot;</span><span class="p">);</span>
-                <span class="p">}</span>
-                <span class="k">break</span><span class="p">;</span>
-            <span class="k">case</span> <span class="mi">4</span><span class="p">:</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Say Goodbye&quot;</span><span class="p">);</span>
                     
             <span class="k">default</span><span class="p">:</span>
                 <span class="c1">//Prints error message from console</span>
@@ -246,17 +236,10 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>-------------------------
-Choose from these choices
--------------------------
-1 - Say Hello
-2 - Output colors
-3 - Loading in color
-4 - 4th Row
-0 - Quit
--------------------------
-
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">                </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">Menu.print</span><span class="ansi-black-intense-fg ansi-bold">();</span>
+<span class="ansi-red-intense-fg ansi-bold">non-static method print() cannot be referenced from a static context</span>
 </pre>
 </div>
 </div>
