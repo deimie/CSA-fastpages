@@ -47,9 +47,9 @@
     
         ,"post4": {
             "title": "Primitives",
-            "content": "public class DefinePrimitives { public static void main(String[] args) { int anInt = 100; double aDouble = 89.9; boolean aBoolean = true; // not primitives but essential String aString = &quot;Hello, World!&quot;; // wrapper class shortcut assignment String aStringFormal = new String(&quot;Greetings, World!&quot;); System.out.println(&quot;anInt: &quot; + anInt); System.out.println(&quot;aDouble: &quot; + aDouble); System.out.println(&quot;aBoolean: &quot; + aBoolean); System.out.println(&quot;aString: &quot; + aString); System.out.println(&quot;aStringFormal: &quot; + aStringFormal); } } DefinePrimitives.main(null) . anInt: 100 aDouble: 89.9 aBoolean: true aString: Hello, World! aStringFormal: Greetings, World! . // java style to import library import java.util.Scanner; // class must alway have 1st letter as uppercase, CamelCase is Java Class convention public class ScanPrimitives { public static void main(String[] args) { Scanner input; // primitive int input = new Scanner(System.in); System.out.print(&quot;Enter an integer: &quot;); try { int sampleInputInt = input.nextInt(); System.out.println(sampleInputInt); } catch (Exception e) { // if not an integer System.out.println(&quot;Not an integer (form like 159), &quot; + e); } input.close(); // primitive double input = new Scanner(System.in); System.out.print(&quot;Enter a double: &quot;); try { double sampleInputDouble = input.nextDouble(); System.out.println(sampleInputDouble); } catch (Exception e) { // if not a number System.out.println(&quot;Not an double (form like 9.99), &quot; + e); } input.close(); // primitive boolean input = new Scanner(System.in); System.out.print(&quot;Enter a boolean: &quot;); try { boolean sampleInputBoolean = input.nextBoolean(); System.out.println(sampleInputBoolean); } catch (Exception e) { // if not true or false System.out.println(&quot;Not an boolean (true or false), &quot; + e); } input.close(); // wrapper class String input = new Scanner(System.in); System.out.print(&quot;Enter a String: &quot;); try { String sampleInputString = input.nextLine(); System.out.println(sampleInputString); } catch (Exception e) { // this may never happen System.out.println(&quot;Not an String, &quot; + e); } input.close(); } } ScanPrimitives.main(null); . Enter an integer: Not an integer (form like 159), java.util.InputMismatchException Enter a double: . public class PrimitiveDivision { public static void main(String[] args) { int i1 = 7, i2 = 2; System.out.println(&quot;Integer Division&quot;); System.out.println(&quot; tint output with concatenation: &quot; + i1 + &quot;/&quot; + i2 + &quot; = &quot; + i1/i2); System.out.println(String.format(&quot; tint output with format: %d/%d = %d&quot;,i1, i2, i1/i2)); System.out.printf(&quot; tint output with printf: %d/%d = %d n&quot;,i1, i2, i1/i2); double d1 = 7, d2 = 2; System.out.println(&quot;Double Division&quot;); System.out.println(&quot; tdouble output with concatenation: &quot; + d1 + &quot;/&quot; + d2 + &quot; = &quot; + d1/d2); System.out.println(String.format(&quot; tdouble output with format: %.2f/%.2f = %.2f&quot;,d1, d2, d1/d2)); System.out.printf(&quot; tdouble output with printf: %.2f/%.2f = %.2f n&quot;,d1, d2, d1/d2); System.out.println(&quot;Casting and Remainders&quot;); System.out.printf(&quot; tint cast to double on division: %d/%d = %.2f n&quot;,i1, i2, i1/(double)i2); System.out.println(&quot; tint using modulo for remainder: &quot; + i1 + &quot;/&quot; + i2 + &quot; = &quot; + i1/i2 + &quot; remainder &quot; + i1%i2); } } PrimitiveDivision.main(null); . public class GradeCalculator { // introduction to Double wrapper class (object) ArrayList&lt;Double&gt; grades; // similar to Python list // constructor, initializes ArrayList and call enterGrades method public GradeCalculator() { this.grades = new ArrayList&lt;&gt;(); this.enterGrades(); } // double requires test for zero versus threshold, DO NOT compare to Zero private boolean isZero(double value){ double threshold = 0.001; return value &gt;= -threshold &amp;&amp; value &lt;= threshold; } // enterGrades input method using scanner private void enterGrades() { Scanner input; while (true) { input = new Scanner(System.in); System.out.print(&quot;Enter a double, 0 to exit: &quot;); try { double sampleInputDouble = input.nextDouble(); System.out.println(sampleInputDouble); if (isZero(sampleInputDouble)) break; // exit loop on isZero else this.grades.add(sampleInputDouble); // adding to object, ArrayList grades } catch (Exception e) { // if not a number System.out.println(&quot;Not an double (form like 9.99), &quot; + e); } input.close(); } } // average calculation public double average() { double total = 0; // running total for (double num : this.grades) { // enhanced for loop total += num; // shortcut add and assign operator } return (total / this.grades.size()); // double math, ArrayList grades object maintains its size } // static main method, used as driver and tester public static void main(String[] args) { GradeCalculator grades = new GradeCalculator(); // calls constructor, creates object, which calls enterGrades System.out.println(&quot;Average: &quot; + String.format(&quot;%.2f&quot;, grades.average())); // format used to standardize to two decimal points } } // IJava activation GradeCalculator.main(null); .",
-            "url": "https://deimie.github.io/fastpages/2022/08/26/primitives.html",
-            "relUrl": "/2022/08/26/primitives.html",
+            "content": "",
+            "url": "https://deimie.github.io/fastpages/markdown/2022/08/26/primitives.html",
+            "relUrl": "/markdown/2022/08/26/primitives.html",
             "date": " • Aug 26, 2022"
         }
         
@@ -58,9 +58,9 @@
     
         ,"post5": {
             "title": "Bash",
-            "content": "cd vscode ls . bash: cd: vscode: No such file or directory 2022-08-22-javaNotebook.ipynb README.md 2022-08-22-pythonNotebook.ipynb ghtop_images 2022-08-25-bash.ipynb my_icons 2022-08-26-primitives.ipynb . python --version python2 --version java --version javac --version . Python 3.9.12 Python 2.7.18 openjdk 17.0.4 2022-07-19 OpenJDK Runtime Environment Temurin-17.0.4+8 (build 17.0.4+8) OpenJDK 64-Bit Server VM Temurin-17.0.4+8 (build 17.0.4+8, mixed mode, sharing) javac 17.0.4 . jupyter kernelspec list . Available kernels: bash /Users/evan/Library/Jupyter/kernels/bash java /Users/evan/Library/Jupyter/kernels/java javascript /Users/evan/Library/Jupyter/kernels/javascript python3 /Users/evan/opt/anaconda3/share/jupyter/kernels/python3 .",
-            "url": "https://deimie.github.io/fastpages/2022/08/25/bash.html",
-            "relUrl": "/2022/08/25/bash.html",
+            "content": "cd vscode ls .",
+            "url": "https://deimie.github.io/fastpages/bash/2022/08/25/bash.html",
+            "relUrl": "/bash/2022/08/25/bash.html",
             "date": " • Aug 25, 2022"
         }
         
@@ -70,8 +70,8 @@
         ,"post6": {
             "title": "Python Notebook",
             "content": "n = int(input(&#39;Type the nth term in the fibonacci sequence: &#39;)) def fibonacci(n): a=0 b=1 fibList = [0] # there are no negative nth terms allowed if n &lt;=0: print(&#39;Input must be greater than 0.&#39;) fibonacci() # restart the program # instead of using logic for the whole sequence, it&#39;s easier to make the 1st term always return 0. elif n == 1: print(fibList) return else: fibList.append(1) # for loop will go through each number of the sequence and append them into the list. for i in range(2,n): c = a + b a = b b = c fibList.append(c) print(fibList) # print final result fibonacci(n) . [0, 1, 1, 2, 3] .",
-            "url": "https://deimie.github.io/fastpages/2022/08/22/pythonNotebook.html",
-            "relUrl": "/2022/08/22/pythonNotebook.html",
+            "url": "https://deimie.github.io/fastpages/python/2022/08/22/pythonNotebook.html",
+            "relUrl": "/python/2022/08/22/pythonNotebook.html",
             "date": " • Aug 22, 2022"
         }
         
@@ -81,8 +81,8 @@
         ,"post7": {
             "title": "Java Notebook",
             "content": "// Define Static Method within a Class public class HelloStatic { // Java standard runtime entry point public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } // A method call allows us to execute code that is wrapped in Class HelloStatic.main(null); // Class prefix allows reference of Static Method . Hello World! .",
-            "url": "https://deimie.github.io/fastpages/2022/08/22/javaNotebook.html",
-            "relUrl": "/2022/08/22/javaNotebook.html",
+            "url": "https://deimie.github.io/fastpages/java/2022/08/22/javaNotebook.html",
+            "relUrl": "/java/2022/08/22/javaNotebook.html",
             "date": " • Aug 22, 2022"
         }
         
@@ -116,6 +116,17 @@
 
   
       ,"page2": {
+          "title": "Blog",
+          "content": "Week 3 . This week we had to work on a lesson for java conditionals, and I also decided to add documentation about De Morgan’s law. The basic run down is that an if statement will return an output if a set condition is met. An else if statement will execute if it’s own condition is met so long as the intial if statement’s condition was not met. An else statement has the final say at the bottom of the block meaning that if no other conditions were met, it will output. else and else if do not need to be included however, and the if statement can be used alone. . De Morgan’s law is the principle that applying NOT logic to AND logic will flip it to OR logic. The same is true in reverse. . This week we also had our human day where we discussed how happiness is mostly a choice. A good amount of the happiness we derive comes from the choice to be happy. There are of course scenarios that help with promoting happiness such as wealth or success. At the end of the day, it’s all down to the person. Personally, having enough money to get by boosts my happiness, but money is certainly not a huge priority in this case. Often times people with too much money end up losing personal connections and relationships with people they once knew well. All in all, happiness is a very fickle thing that will always remain important to try to maintain in whatever way works best for you. .",
+          "url": "https://deimie.github.io/fastpages/blog/",
+          "relUrl": "/blog/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
           "title": "",
           "content": "Welcome to my page! . | | | . . Posts .",
           "url": "https://deimie.github.io/fastpages/",
@@ -126,7 +137,7 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "Notes",
           "content": "Capture Information Plan . I plan to store all new information that I learn in this notes page for the rest of the trimester. This will mostly be the info I learn about java from code.org or personal research . . Syntax for Front Matter . . . Code.org Documentation . Lesson 1 . Lesson 1 is simply an introduction to the course. It talks about how CSA students are taught to think similarly to software engineers, and how we will continue to grow form this. . Lesson 2 . In lesson 2, we learn about the basic structure of a java header, as well as some basic syntax. Below is a basic java header. . public class className { public static void main(String[] args) { } } . The main method is the most common method used as an entry point to any java program. | The public method is simply a method that makes the scope of the code global. It’s kind of in the name. | static means that there will only be one type of this method and that it will be shared. Basically, we can call the main method multiple times without creating a new object. | void means there will be nothing returned from the main method. | String[] args - The main method’s argument is an array of string type. THis allows the method to accept command line arguments, which are stored as strings in this variable. args can be changed. | . Lesson 3 . To instatiate a new object you use the syntax: className objectName = new className(); . Lesson 4 . Lesson 4 was just lots of tedious programming challenges using the things we already learned from the first 3 lessons. There were 4 different challenges where we controlled a painter. These challenges made it almost muscle memory to call objects in java. . Lesson 5 . Lesson 5 was similar to lesson 4, by having many challnges to complete, except now the if statement was introduced. . Lesson 6 . We learned about subclasses and superclasses. A subclass is a class that has its own attributes, but will inherit all of the attributes from a superclass. The way to construct a subclass is below: . public class SubClassName extends SuperClassName { public SubClassName() { super(); } } . Lesson 7 . In lesson 7 we learn about creating new methods. The way we can do this is below: . public void methodName(){ //create a method // put code that you want the method to run } variableName.methodName(); //to call the method . Important sidenote: In javalabs on code.org, you have to extend your subclass to the superclass “Painter” in order to use most of the prebuilt features. . Lesson 8 . In lesson 8, we learn about commenting code using // or /* */. We also learn about commiting files, which are then stored in the backpack. These files can be imported once again from the backpack. We learn about opening code reviews where peers can see and comment on our code (But these have to be enabled by the teacher, which they are presently not). . Lesson 9 . In this lesson the while loop was introduced. Everything else was very standard, and simply challenged us to use the while loop. . Lesson 10 . This lesson introduced logic gates. ! is the NOT operator. &amp;&amp; is the AND operator. . Lesson 11 . This lesson was just a few basic debugging chhallenges. We would look as dysfunctional code and try to figure out what was wrong with out. Nothing new in this lesson, just review. . Lesson 12 . This lesson challenged us to make new slighty more complicated methods, but once again, nothing really new. . Lesson 13 . I could be entirely misunderstanding, but I could not for the life of me figure out this lesson. It seemed bugged, as there was no paint for the painter to use. I did some research and I’m quite lost, but the concept was just to create and save a method in a new file so it could be used across projects. . Lesson 14 . This lesson branched off 13 a bit with the concept. To be honest the last few lessons are very repetitive and no new info was really taught. . Lesson 15 . The final lesson was simply a FRQ asking about your best software engineer qualitly. Not a real lesson. . . Class Notes .",
           "url": "https://deimie.github.io/fastpages/notes/",
@@ -156,7 +167,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://deimie.github.io/fastpages/robots.txt",
