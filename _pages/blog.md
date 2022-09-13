@@ -1,3 +1,9 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
 ### Week 3
 
 This week we had to work on a lesson for java conditionals, and I also decided to add documentation about De Morgan's law. The basic run down is that an ```if``` 
