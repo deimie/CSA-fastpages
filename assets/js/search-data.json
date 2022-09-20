@@ -2,6 +2,28 @@
   
     
         "post0": {
+            "title": "Methods and Control Structures",
+            "content": "public class StepTracker { private int days; private int activeDays; private int totalSteps; private int minActive; public int activeDays() { return activeDays; } public void addDailySteps(int steps) { days++; totalSteps += steps; if (steps &gt;= minActive) { activeDays++; } } public double averageSteps() { if (days &gt; 0) { return (double) totalSteps / days; } else { return 0.0; } } } .",
+            "url": "https://deimie.github.io/fastpages/2022/09/19/unit1-lesson.html",
+            "relUrl": "/2022/09/19/unit1-lesson.html",
+            "date": " • Sep 19, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "ASCII 2D Array",
+            "content": "/* * Creator: Nighthawk Coding Society * Mini Lab Name: Hello Series,featuring Monkey Jumpers */ /** * Class for Monkeys: a 2D array of Monkeys * As well as method to print the Poem */ class MonkeyLoop { //The area between class definition and the 1st method is where we keep data for object in Java String [][] monkeys; //2D Array: AP CSA Unit 8: 2D array of strings //2D array is like a grid [x][y] // or like a spreadsheet [row][column] /** * Constructor initializes a 2D array of Monkeys */ public MonkeyLoop() { //Storing Data in 2D arrays monkeys = new String[][]{ //2D array above is just a name, &quot;new&quot; makes a container (&quot;object&quot;) //Monkey 0 { &quot; c(..)o ( &quot;, &quot; __(-) __)&quot;, &quot; / ( &quot;, &quot; /(_)___) &quot;, &quot; w /| &quot;, &quot; | &quot;, &quot; m m &quot; }, //Monkey 1 { &quot; c(..)o ( &quot;, &quot; __(-) __)&quot;, &quot; / ( &quot;, &quot; /(_)___) &quot;, &quot; w /| &quot;, &quot; | &quot;, &quot; m m &quot; }, //Monkey 2 { &quot; c(..)o ( &quot;, &quot; __(-) __)&quot;, &quot; / ( &quot;, &quot; /(_)___) &quot;, &quot; w /| &quot;, &quot; | &quot;, &quot; m m &quot; }, //Monkey 3 { &quot; c(..)o ( &quot;, &quot; __(-) __)&quot;, &quot; / ( &quot;, &quot; /(_)___) &quot;, &quot; w /| &quot;, &quot; | &quot;, &quot; m m &quot; }, //Monkey 4 { &quot; c(..)o ( &quot;, &quot; __(-) __)&quot;, &quot; / ( &quot;, &quot; /(_)___) &quot;, &quot; w /| &quot;, &quot; | &quot;, &quot; m m &quot; }, }; } /** * Loop and print monkeys in array * ... repeat until you reach zero ... */ public void printPoem() { //begin the poem System.out.println(); System.out.println(&quot;Monkey Jumpers Poem in Java Loopy&quot;); // monkeys (non-primitive) defined in constructor knows its length int monkeyCount = monkeys.length; for (int i = monkeyCount; i &gt;= 1; i--) //loops through 2D array length backwards { //this print statement shows current count of Monkeys // concatenation (+) of the loop variable and string to form a countdown message System.out.println(i + &quot; little monkeys jumping on the bed...&quot;); //how many separate parts are there in a monkey monkey? for (int row = 0; row &lt; monkeyCount; row++) { //cycles through &quot;cells&quot; of 2d array /*cycles through columns to print each monkey part by part, will eventually print entire column*/ for (int col = 0; col &lt; monkeys[row].length; col++) { // prints specific part of the monkey from the column System.out.print(monkeys[row][col] + &quot; &quot;); //this is new line between separate parts System.out.println(); } //this new line gives separation between stanza of poem System.out.println(); } //countdown for poem, decrementing monkeyCount variable by 1 monkeyCount -= 1; } //out of all the loops, prints finishing messages System.out.println(&quot;No more monkeys jumping on the bed&quot;); System.out.println(&quot;-================================-&quot;); System.out.println(&quot; THE END &quot;); } /** * A Java Driver/Test method that is the entry point for execution */ public static void main(String[] args) { new MonkeyLoop().printPoem(); //a new monkey list and output in one step } } MonkeyLoop.main(null); . Monkey Jumpers Poem in Java Loopy 5 little monkeys jumping on the bed... c(..)o ( __(-) __) / ( /(_)___) w /| | m m c(..)o ( __(-) __) / ( /(_)___) w /| | m m c(..)o ( __(-) __) / ( /(_)___) w /| | m m c(..)o ( __(-) __) / ( /(_)___) w /| | m m c(..)o ( __(-) __) / ( /(_)___) w /| | m m 4 little monkeys jumping on the bed... c(..)o ( __(-) __) / ( /(_)___) w /| | m m c(..)o ( __(-) __) / ( /(_)___) w /| | m m c(..)o ( __(-) __) / ( /(_)___) w /| | m m c(..)o ( __(-) __) / ( /(_)___) w /| | m m 3 little monkeys jumping on the bed... c(..)o ( __(-) __) / ( /(_)___) w /| | m m c(..)o ( __(-) __) / ( /(_)___) w /| | m m c(..)o ( __(-) __) / ( /(_)___) w /| | m m 2 little monkeys jumping on the bed... c(..)o ( __(-) __) / ( /(_)___) w /| | m m c(..)o ( __(-) __) / ( /(_)___) w /| | m m 1 little monkeys jumping on the bed... c(..)o ( __(-) __) / ( /(_)___) w /| | m m No more monkeys jumping on the bed -================================- THE END .",
+            "url": "https://deimie.github.io/fastpages/2022/09/16/ascii-2d-array.html",
+            "relUrl": "/2022/09/16/ascii-2d-array.html",
+            "date": " • Sep 16, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
             "title": "Java Conditionals",
             "content": "// De Morgan&#39;s Law Demonstration if (!(true &amp;&amp; false)) { // if NOT (true AND false) System.out.println(&quot;1st True&quot;); } if (false || true) { //simplfied version of above condition. if false OR true System.out.println(&quot;2nd True&quot;); } /* According to De Morgan&#39;s law, a NOT condition will turn an AND into an OR and an OR into an AND. The two conditon above are the same condition. */ if (!(false &amp;&amp; !false)) { // if NOT (false AND NOT(false)) System.out.println(&quot;3rd True&quot;); } if (true || true) { // simplified version of above condition. if true OR true System.out.println(&quot;4th True&quot;); } if (!(true || true)) { // this last one does not display because the OR switches to an AND and the trues switch to falses System.out.println(&quot;5th True&quot;); } . 1st True 2nd True 3rd True 4th True . // If, Else If, Else Demonstration if (1 == 1) { // if 1 is 1 (it always is) display true System.out.println(&quot;This is true&quot;); } if (1 == 2) { // 1 is not 2 so this is ignored System.out.println(&quot;This won&#39;t display&quot;); } else if (2 == 2){ System.out.println(&quot;This one&#39;s also true&quot;); } if (1 == 2) { // Non-true statement System.out.println(&quot;This isn&#39;t true&quot;); } else if (1 == 3) { // Non-true statement System.out.println(&quot;This isn&#39;t either&quot;); } else { // Because no other statements were true, this is the last response System.out.println(&quot;Nothing else was true, so this is the reponse if nothing else works.&quot;); } . This is true This one&#39;s also true Nothing else was true, so this is the reponse if nothing else works. .",
             "url": "https://deimie.github.io/fastpages/2022/09/07/conditional-lesson.html",
@@ -12,7 +34,7 @@
     
   
     
-        ,"post1": {
+        ,"post3": {
             "title": "Innovation Week 2",
             "content": "Github Link . Evan Sanchez’s Review Ticket . Reviewed by: Calissa Tyrell . Score 2.7+/3 . . Link to java menu . | Link to code.org takeaways . | Code.org completion proof . | . .",
             "url": "https://deimie.github.io/fastpages/2022/09/06/Innovation-Week-2.html",
@@ -23,7 +45,7 @@
     
   
     
-        ,"post2": {
+        ,"post4": {
             "title": "Java Menu",
             "content": "// imports allow you to use code already written by others. It is good to explore and learn libraries. The names around the dots often give you a hint to the originator of the code. import java.util.Scanner; //library for user input import java.lang.Math; //library for random numbers public class Menu { // Instance Variables public final String DEFAULT = &quot; u001B[0m&quot;; // Default Terminal Color public final String[][] COLORS = { // 2D Array of ANSI Terminal Colors {&quot;Default&quot;,DEFAULT}, {&quot;Red&quot;, &quot; u001B[31m&quot;}, {&quot;Green&quot;, &quot; u001B[32m&quot;}, {&quot;Yellow&quot;, &quot; u001B[33m&quot;}, {&quot;Blue&quot;, &quot; u001B[34m&quot;}, {&quot;Purple&quot;, &quot; u001B[35m&quot;}, {&quot;Cyan&quot;, &quot; u001B[36m&quot;}, {&quot;White&quot;, &quot; u001B[37m&quot;}, }; // 2D column location for data public final int NAME = 0; public final int ANSI = 1; // ANSI is the &quot;standard&quot; for terminal codes // Constructor on this Object takes control of menu events and actions public Menu() { Scanner sc = new Scanner(System.in); // using Java Scanner Object this.print(); // print Menu boolean quit = false; while (!quit) { try { // scan for Input int choice = sc.nextInt(); // using method from Java Scanner Object System.out.print(&quot;&quot; + choice + &quot;: &quot;); quit = this.action(choice); // take action } catch (Exception e) { sc.nextLine(); // error: clear buffer System.out.println(e + &quot;: Not a number, try again.&quot;); } } sc.close(); } // Print the menu options to Terminal private void print() { //System.out.println commands below is used to present a Menu to the user. System.out.println(&quot;-&quot;); System.out.println(&quot;Select A Function&quot;); System.out.println(&quot;-&quot;); System.out.println(&quot;1 - Basic Addition&quot;); System.out.println(&quot;2 - WIP&quot;); System.out.println(&quot;0 - Quit&quot;); System.out.println(&quot;- n&quot;); } // Private method to perform action and return true if action is to quit/exit private boolean action(int selection) { boolean quit = false; switch (selection) { // Switch or Switch/Case is Control Flow statement and is used to evaluate the user selection case 0: System.out.print(&quot;See you later!&quot;); quit = true; break; case 1: Scanner sc = new Scanner(System.in); System.out.println(&quot;Basic Addition &quot;); System.out.println(&quot;Please select first number: &quot;); int choice1 = sc.nextInt(); System.out.println(&quot;Please select second number: &quot;); int choice2 = sc.nextInt(); System.out.print(&quot;Your sum is: &quot; + (choice1 + choice2)); sc.close(); break; case 2: System.out.println(&quot;Option 2 &quot;); break; default: //Prints error message from console System.out.print(&quot;Unexpected choice, try again.&quot;); } System.out.println(DEFAULT); // make sure to reset color and provide new line return quit; } // Static driver/tester method static public void main(String[] args) { new Menu(); // starting Menu object } } Menu.main(null); . - Select A Function - 1 - Basic Addition 2 - WIP 0 - Quit - 2: Option 2 0: See you later! .",
             "url": "https://deimie.github.io/fastpages/2022/08/30/java-menu.html",
@@ -34,7 +56,7 @@
     
   
     
-        ,"post3": {
+        ,"post5": {
             "title": "Innovation - Week 1",
             "content": "Github Link . Create a Jupyter Notebook and that you could use it to show that you have all the key tools installed using Bash. . | Create a Jupyter Notebook(s) using IJava kernel and that you could use it to capture key learning on Primitives. . | Seeing that you understand how to use Code.org and that you used it to complement your learning on primitives. Up to Lesson 5 in the OOP assignment. Code.org documentation . | .",
             "url": "https://deimie.github.io/fastpages/markdown/2022/08/29/Innovation-Week-1.html",
@@ -45,7 +67,7 @@
     
   
     
-        ,"post4": {
+        ,"post6": {
             "title": "Primitives",
             "content": "",
             "url": "https://deimie.github.io/fastpages/markdown/2022/08/26/primitives.html",
@@ -56,7 +78,7 @@
     
   
     
-        ,"post5": {
+        ,"post7": {
             "title": "Bash",
             "content": "cd vscode ls .",
             "url": "https://deimie.github.io/fastpages/bash/2022/08/25/bash.html",
@@ -67,7 +89,7 @@
     
   
     
-        ,"post6": {
+        ,"post8": {
             "title": "Python Notebook",
             "content": "n = int(input(&#39;Type the nth term in the fibonacci sequence: &#39;)) def fibonacci(n): a=0 b=1 fibList = [0] # there are no negative nth terms allowed if n &lt;=0: print(&#39;Input must be greater than 0.&#39;) fibonacci() # restart the program # instead of using logic for the whole sequence, it&#39;s easier to make the 1st term always return 0. elif n == 1: print(fibList) return else: fibList.append(1) # for loop will go through each number of the sequence and append them into the list. for i in range(2,n): c = a + b a = b b = c fibList.append(c) print(fibList) # print final result fibonacci(n) . [0, 1, 1, 2, 3] .",
             "url": "https://deimie.github.io/fastpages/python/2022/08/22/pythonNotebook.html",
@@ -78,7 +100,7 @@
     
   
     
-        ,"post7": {
+        ,"post9": {
             "title": "Java Notebook",
             "content": "// Define Static Method within a Class public class HelloStatic { // Java standard runtime entry point public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } // A method call allows us to execute code that is wrapped in Class HelloStatic.main(null); // Class prefix allows reference of Static Method . Hello World! .",
             "url": "https://deimie.github.io/fastpages/java/2022/08/22/javaNotebook.html",
@@ -89,7 +111,7 @@
     
   
     
-        ,"post8": {
+        ,"post10": {
             "title": "Tool Setup - Week 0",
             "content": "Github Link . Fastpages with post . Build personal Fastpages / GitHub pages “_post” share the following. . | Share link to personal Fastpages / GitHub pages running on github.io. . | My suggestion is to change index.html to show it is really yours. . | Share link to a new page (_posts) in your Fastpages project show use of Markdown and/or HTML fragments. You will need to learn special date requirements of a file as well as a little Markdown or HTML. . | Share link to Python Jupyter notebook (_notebooks) showing usage of Python: print (“Hello”) . | Share link to Java Jupyter notebook (_notebooks) showing usage of Java: System.out.println(“Hello”) . | Capture image/screen capture of Fastpages project showing use of an Integrated Development Environment (VS Studio) . | Share link showing your GitHub insights. This is your personal activity of commit history. . | . Java project running on localhost:8080 .",
             "url": "https://deimie.github.io/fastpages/markdown/2022/08/22/Tool-Setup-Week-0.html",
