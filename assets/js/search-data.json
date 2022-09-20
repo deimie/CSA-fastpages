@@ -103,8 +103,8 @@
         ,"post9": {
             "title": "Java Notebook",
             "content": "// Define Static Method within a Class public class HelloStatic { // Java standard runtime entry point public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } // A method call allows us to execute code that is wrapped in Class HelloStatic.main(null); // Class prefix allows reference of Static Method . Hello World! .",
-            "url": "https://deimie.github.io/fastpages/2022/08/22/javaNotebook.html",
-            "relUrl": "/2022/08/22/javaNotebook.html",
+            "url": "https://deimie.github.io/fastpages/java/2022/08/22/javaNotebook.html",
+            "relUrl": "/java/2022/08/22/javaNotebook.html",
             "date": " • Aug 22, 2022"
         }
         
