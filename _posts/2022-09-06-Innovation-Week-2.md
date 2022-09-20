@@ -1,3 +1,12 @@
+---
+toc: true
+layout: post
+description: CSA Week 2
+categories: [markdown]
+title: Innovation - Week 2
+image: images/githubLogo.png
+---
+
 [Github Link](https://github.com/deimie/fastpages/issues/4)
 
 ### Evan Sanchez's Review Ticket
