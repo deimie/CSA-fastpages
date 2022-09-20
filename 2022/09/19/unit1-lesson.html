@@ -152,18 +152,19 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">StepTracker</span> <span class="p">{</span>   
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">StepTracker</span> <span class="p">{</span>   <span class="c1">// new class &#39;StepTracker&#39;</span>
 
+    <span class="c1">//variables which will be used in methods</span>
     <span class="kd">private</span> <span class="kt">int</span> <span class="n">days</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kt">int</span> <span class="n">activeDays</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kt">int</span> <span class="n">totalSteps</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kt">int</span> <span class="n">minActive</span><span class="p">;</span>
 
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">activeDays</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">activeDays</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// returns # of active days</span>
         <span class="k">return</span> <span class="n">activeDays</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addDailySteps</span><span class="p">(</span><span class="kt">int</span> <span class="n">steps</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addDailySteps</span><span class="p">(</span><span class="kt">int</span> <span class="n">steps</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// adds 1 to day counter and allows input of step count. will also incremenet active days if step count is met</span>
         <span class="n">days</span><span class="o">++</span><span class="p">;</span>
         <span class="n">totalSteps</span> <span class="o">+=</span> <span class="n">steps</span><span class="p">;</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">steps</span> <span class="o">&gt;=</span> <span class="n">minActive</span><span class="p">)</span> <span class="p">{</span>
@@ -171,7 +172,7 @@ window.onload = wrap_img;
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">averageSteps</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">averageSteps</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// takes the average of steps across days</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">days</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
             <span class="k">return</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">totalSteps</span> <span class="o">/</span> <span class="n">days</span><span class="p">;</span>
         <span class="p">}</span>
