@@ -206,13 +206,12 @@ window.onload = wrap_img;
 
             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;-========== &quot;</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">&quot; Monkeys ==========-&quot;</span><span class="p">);</span>
 
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">monkeyCount</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">monkeys</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
 
-                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">monkeys</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">monkeyCount</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
 
-                    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">monkeys</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+                    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">monkeys</span><span class="o">[</span><span class="n">col</span><span class="o">][</span><span class="n">row</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
 
-                    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
                 <span class="p">}</span>
 
                 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
@@ -247,121 +246,37 @@ window.onload = wrap_img;
 <pre>
 The Monkeys
 -========== 5 Monkeys ==========-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
+  c(..)o   (    c(..)o   (    c(..)o   (    c(..)o   (    c(..)o   (  
+\__(-)    __) \__(-)    __) \__(-)    __) \__(-)    __) \__(-)    __) 
+    /\   (        /\   (        /\   (        /\   (        /\   (    
+   /(_)___)      /(_)___)      /(_)___)      /(_)___)      /(_)___)   
+   w /|          w /|          w /|          w /|          w /|       
+    | \           | \           | \           | \           | \       
+   m  m          m  m          m  m          m  m          m  m       
 -========== 4 Monkeys ==========-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
+  c(..)o   (    c(..)o   (    c(..)o   (    c(..)o   (  
+\__(-)    __) \__(-)    __) \__(-)    __) \__(-)    __) 
+    /\   (        /\   (        /\   (        /\   (    
+   /(_)___)      /(_)___)      /(_)___)      /(_)___)   
+   w /|          w /|          w /|          w /|       
+    | \           | \           | \           | \       
+   m  m          m  m          m  m          m  m       
 -========== 3 Monkeys ==========-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
+  c(..)o   (    c(..)o   (    c(..)o   (  
+\__(-)    __) \__(-)    __) \__(-)    __) 
+    /\   (        /\   (        /\   (    
+   /(_)___)      /(_)___)      /(_)___)   
+   w /|          w /|          w /|       
+    | \           | \           | \       
+   m  m          m  m          m  m       
 -========== 2 Monkeys ==========-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
-  c(..)o   (  
-\__(-)    __) 
-    /\   (    
-   /(_)___)   
-   w /|       
-    | \       
-   m  m       
-
+  c(..)o   (    c(..)o   (  
+\__(-)    __) \__(-)    __) 
+    /\   (        /\   (    
+   /(_)___)      /(_)___)   
+   w /|          w /|       
+    | \           | \       
+   m  m          m  m       
 -========== 1 Monkeys ==========-
   c(..)o   (  
 \__(-)    __) 
@@ -370,7 +285,6 @@ The Monkeys
    w /|       
     | \       
    m  m       
-
 All the monkeys are gone
 -================================-
              THE END              
