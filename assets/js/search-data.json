@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Javascript Notes",
+            "content": "Javascript Data Types . Here is a function that will print out the data type of an input. . function dataType(data) { console.log(data + &quot;: &quot; + typeof data) } dataType(&quot;Hello&quot;); dataType(3); dataType(true); dataType(null); dataType(); . Hello: string 3: number true: boolean null: object undefined: undefined .",
+            "url": "https://deimie.github.io/fastpages/2022/09/21/js-notes.html",
+            "relUrl": "/2022/09/21/js-notes.html",
+            "date": " • Sep 21, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Methods and Control Structures",
             "content": "2019 AP® COMPUTER SCIENCE A FREE-RESPONSE QUESTIONS . This question involves the implementation of a fitness tracking system that is represented by the StepTracker class. A StepTracker object is created with a parameter that defines the minimum number of steps that must be taken for a day to be considered active. | The StepTracker class provides a constructor and the following methods. . addDailySteps, which accumulates information about steps, in readings taken once per day . | activeDays, which returns the number of active days . | averageSteps, which returns the average number of steps per day, calculated by dividing the total number of steps taken by the number of days tracked . | . public class StepTracker { // new class &#39;StepTracker&#39; StepTracker st = new StepTracker(10000); //variables which will be used in methods private int days; private int activeDays; private int totalSteps; private int minActive; public int StepTracker(int m) { minActive = m; } public int activeDays() { // returns # of active days return activeDays; } public void addDailySteps(int steps) { // adds 1 to day counter and allows input of step count. will also incremenet active days if step count is met days++; totalSteps += steps; if (steps &gt;= minActive) { activeDays++; } } public double averageSteps() { // takes the average of steps across days if (days &gt; 0) { return (double) totalSteps / days; } else { return 0.0; } } } .",
             "url": "https://deimie.github.io/fastpages/2022/09/19/unit1-lesson.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "ASCII 2D Array",
             "content": "class MonkeyLoop { String [][] monkeys; public MonkeyLoop() { monkeys = new String[][] { //Monkey 0 { &quot; c(..)o ( &quot;, &quot; __(-) __)&quot;, &quot; / ( &quot;, &quot; /(_)___) &quot;, &quot; w /| &quot;, &quot; | &quot;, &quot; m m &quot; }, //Monkey 1 { &quot; c(..)o ( &quot;, &quot; __(-) __)&quot;, &quot; / ( &quot;, &quot; /(_)___) &quot;, &quot; w /| &quot;, &quot; | &quot;, &quot; m m &quot; }, //Monkey 2 { &quot; c(..)o ( &quot;, &quot; __(-) __)&quot;, &quot; / ( &quot;, &quot; /(_)___) &quot;, &quot; w /| &quot;, &quot; | &quot;, &quot; m m &quot; }, //Monkey 3 { &quot; c(..)o ( &quot;, &quot; __(-) __)&quot;, &quot; / ( &quot;, &quot; /(_)___) &quot;, &quot; w /| &quot;, &quot; | &quot;, &quot; m m &quot; }, //Monkey 4 { &quot; c(..)o ( &quot;, &quot; __(-) __)&quot;, &quot; / ( &quot;, &quot; /(_)___) &quot;, &quot; w /| &quot;, &quot; | &quot;, &quot; m m &quot; }, }; } public void printText() { System.out.println(); System.out.println(&quot;The Monkeys&quot;); int monkeyCount = monkeys.length; for (int i = monkeyCount; i &gt;= 1; i--) { System.out.println(&quot;-========== &quot; + i + &quot; Monkeys ==========-&quot;); for (int row = 0; row &lt; monkeys[0].length; row++) { for (int col = 0; col &lt; monkeyCount; col++) { System.out.print(monkeys[col][row] + &quot; &quot;); } System.out.println(); } monkeyCount --; } System.out.println(&quot;All the monkeys are gone&quot;); System.out.println(&quot;-================================-&quot;); System.out.println(&quot; THE END &quot;); } public static void main(String[] args) { new MonkeyLoop().printText(); } } MonkeyLoop.main(null); . The Monkeys -========== 5 Monkeys ==========- c(..)o ( c(..)o ( c(..)o ( c(..)o ( c(..)o ( __(-) __) __(-) __) __(-) __) __(-) __) __(-) __) / ( / ( / ( / ( / ( /(_)___) /(_)___) /(_)___) /(_)___) /(_)___) w /| w /| w /| w /| w /| | | | | | m m m m m m m m m m -========== 4 Monkeys ==========- c(..)o ( c(..)o ( c(..)o ( c(..)o ( __(-) __) __(-) __) __(-) __) __(-) __) / ( / ( / ( / ( /(_)___) /(_)___) /(_)___) /(_)___) w /| w /| w /| w /| | | | | m m m m m m m m -========== 3 Monkeys ==========- c(..)o ( c(..)o ( c(..)o ( __(-) __) __(-) __) __(-) __) / ( / ( / ( /(_)___) /(_)___) /(_)___) w /| w /| w /| | | | m m m m m m -========== 2 Monkeys ==========- c(..)o ( c(..)o ( __(-) __) __(-) __) / ( / ( /(_)___) /(_)___) w /| w /| | | m m m m -========== 1 Monkeys ==========- c(..)o ( __(-) __) / ( /(_)___) w /| | m m All the monkeys are gone -================================- THE END .",
             "url": "https://deimie.github.io/fastpages/2022/09/16/ascii-2d-array.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Java Conditionals",
             "content": "// De Morgan&#39;s Law Demonstration if (!(true &amp;&amp; false)) { // if NOT (true AND false) System.out.println(&quot;1st True&quot;); } if (false || true) { //simplfied version of above condition. if false OR true System.out.println(&quot;2nd True&quot;); } /* According to De Morgan&#39;s law, a NOT condition will turn an AND into an OR and an OR into an AND. The two conditon above are the same condition. */ if (!(false &amp;&amp; !false)) { // if NOT (false AND NOT(false)) System.out.println(&quot;3rd True&quot;); } if (true || true) { // simplified version of above condition. if true OR true System.out.println(&quot;4th True&quot;); } if (!(true || true)) { // this last one does not display because the OR switches to an AND and the trues switch to falses System.out.println(&quot;5th True&quot;); } . 1st True 2nd True 3rd True 4th True . // If, Else If, Else Demonstration if (1 == 1) { // if 1 is 1 (it always is) display true System.out.println(&quot;This is true&quot;); } if (1 == 2) { // 1 is not 2 so this is ignored System.out.println(&quot;This won&#39;t display&quot;); } else if (2 == 2){ System.out.println(&quot;This one&#39;s also true&quot;); } if (1 == 2) { // Non-true statement System.out.println(&quot;This isn&#39;t true&quot;); } else if (1 == 3) { // Non-true statement System.out.println(&quot;This isn&#39;t either&quot;); } else { // Because no other statements were true, this is the last response System.out.println(&quot;Nothing else was true, so this is the reponse if nothing else works.&quot;); } . This is true This one&#39;s also true Nothing else was true, so this is the reponse if nothing else works. .",
             "url": "https://deimie.github.io/fastpages/2022/09/07/conditional-lesson.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Innovation - Week 2",
             "content": "Github Link . Evan Sanchez’s Review Ticket . Reviewed by: Calissa Tyrell . Score 2.7+/3 . . Link to java menu . | Link to code.org takeaways . | Code.org completion proof . | . .",
             "url": "https://deimie.github.io/fastpages/markdown/2022/09/06/Innovation-Week-2.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "Java Menu",
             "content": "// imports allow you to use code already written by others. It is good to explore and learn libraries. The names around the dots often give you a hint to the originator of the code. import java.util.Scanner; //library for user input import java.lang.Math; //library for random numbers public class Menu { // Instance Variables public final String DEFAULT = &quot; u001B[0m&quot;; // Default Terminal Color public final String[][] COLORS = { // 2D Array of ANSI Terminal Colors {&quot;Default&quot;,DEFAULT}, {&quot;Red&quot;, &quot; u001B[31m&quot;}, {&quot;Green&quot;, &quot; u001B[32m&quot;}, {&quot;Yellow&quot;, &quot; u001B[33m&quot;}, {&quot;Blue&quot;, &quot; u001B[34m&quot;}, {&quot;Purple&quot;, &quot; u001B[35m&quot;}, {&quot;Cyan&quot;, &quot; u001B[36m&quot;}, {&quot;White&quot;, &quot; u001B[37m&quot;}, }; // 2D column location for data public final int NAME = 0; public final int ANSI = 1; // ANSI is the &quot;standard&quot; for terminal codes // Constructor on this Object takes control of menu events and actions public Menu() { Scanner sc = new Scanner(System.in); // using Java Scanner Object this.print(); // print Menu boolean quit = false; while (!quit) { try { // scan for Input int choice = sc.nextInt(); // using method from Java Scanner Object System.out.print(&quot;&quot; + choice + &quot;: &quot;); quit = this.action(choice); // take action } catch (Exception e) { sc.nextLine(); // error: clear buffer System.out.println(e + &quot;: Not a number, try again.&quot;); } } sc.close(); } // Print the menu options to Terminal private void print() { //System.out.println commands below is used to present a Menu to the user. System.out.println(&quot;-&quot;); System.out.println(&quot;Select A Function&quot;); System.out.println(&quot;-&quot;); System.out.println(&quot;1 - Basic Addition&quot;); System.out.println(&quot;2 - WIP&quot;); System.out.println(&quot;0 - Quit&quot;); System.out.println(&quot;- n&quot;); } // Private method to perform action and return true if action is to quit/exit private boolean action(int selection) { boolean quit = false; switch (selection) { // Switch or Switch/Case is Control Flow statement and is used to evaluate the user selection case 0: System.out.print(&quot;See you later!&quot;); quit = true; break; case 1: Scanner sc = new Scanner(System.in); System.out.println(&quot;Basic Addition &quot;); System.out.println(&quot;Please select first number: &quot;); int choice1 = sc.nextInt(); System.out.println(&quot;Please select second number: &quot;); int choice2 = sc.nextInt(); System.out.print(&quot;Your sum is: &quot; + (choice1 + choice2)); sc.close(); break; case 2: System.out.println(&quot;Option 2 &quot;); break; default: //Prints error message from console System.out.print(&quot;Unexpected choice, try again.&quot;); } System.out.println(DEFAULT); // make sure to reset color and provide new line return quit; } // Static driver/tester method static public void main(String[] args) { new Menu(); // starting Menu object } } Menu.main(null); . - Select A Function - 1 - Basic Addition 2 - WIP 0 - Quit - 2: Option 2 0: See you later! .",
             "url": "https://deimie.github.io/fastpages/2022/08/30/java-menu.html",
@@ -56,7 +67,7 @@
     
   
     
-        ,"post5": {
+        ,"post6": {
             "title": "Innovation - Week 1",
             "content": "Github Link . Create a Jupyter Notebook and that you could use it to show that you have all the key tools installed using Bash. . | Create a Jupyter Notebook(s) using IJava kernel and that you could use it to capture key learning on Primitives. . | Seeing that you understand how to use Code.org and that you used it to complement your learning on primitives. Up to Lesson 5 in the OOP assignment. Code.org documentation . | .",
             "url": "https://deimie.github.io/fastpages/markdown/2022/08/29/Innovation-Week-1.html",
@@ -67,7 +78,7 @@
     
   
     
-        ,"post6": {
+        ,"post7": {
             "title": "Primitives",
             "content": "public class DefinePrimitives { public static void main(String[] args) { int anInt = 100; double aDouble = 89.9; boolean aBoolean = true; // not primitives but essential String aString = &quot;Hello, World!&quot;; // wrapper class shortcut assignment String aStringFormal = new String(&quot;Greetings, World!&quot;); System.out.println(&quot;anInt: &quot; + anInt); System.out.println(&quot;aDouble: &quot; + aDouble); System.out.println(&quot;aBoolean: &quot; + aBoolean); System.out.println(&quot;aString: &quot; + aString); System.out.println(&quot;aStringFormal: &quot; + aStringFormal); } } DefinePrimitives.main(null) . anInt: 100 aDouble: 89.9 aBoolean: true aString: Hello, World! aStringFormal: Greetings, World! . // java style to import library import java.util.Scanner; // class must alway have 1st letter as uppercase, CamelCase is Java Class convention public class ScanPrimitives { public static void main(String[] args) { Scanner input; // primitive int input = new Scanner(System.in); System.out.print(&quot;Enter an integer: &quot;); try { int sampleInputInt = input.nextInt(); System.out.println(sampleInputInt); } catch (Exception e) { // if not an integer System.out.println(&quot;Not an integer (form like 159), &quot; + e); } input.close(); // primitive double input = new Scanner(System.in); System.out.print(&quot;Enter a double: &quot;); try { double sampleInputDouble = input.nextDouble(); System.out.println(sampleInputDouble); } catch (Exception e) { // if not a number System.out.println(&quot;Not an double (form like 9.99), &quot; + e); } input.close(); // primitive boolean input = new Scanner(System.in); System.out.print(&quot;Enter a boolean: &quot;); try { boolean sampleInputBoolean = input.nextBoolean(); System.out.println(sampleInputBoolean); } catch (Exception e) { // if not true or false System.out.println(&quot;Not an boolean (true or false), &quot; + e); } input.close(); // wrapper class String input = new Scanner(System.in); System.out.print(&quot;Enter a String: &quot;); try { String sampleInputString = input.nextLine(); System.out.println(sampleInputString); } catch (Exception e) { // this may never happen System.out.println(&quot;Not an String, &quot; + e); } input.close(); } } ScanPrimitives.main(null); . Enter an integer: Not an integer (form like 159), java.util.InputMismatchException Enter a double: . public class PrimitiveDivision { public static void main(String[] args) { int i1 = 7, i2 = 2; System.out.println(&quot;Integer Division&quot;); System.out.println(&quot; tint output with concatenation: &quot; + i1 + &quot;/&quot; + i2 + &quot; = &quot; + i1/i2); System.out.println(String.format(&quot; tint output with format: %d/%d = %d&quot;,i1, i2, i1/i2)); System.out.printf(&quot; tint output with printf: %d/%d = %d n&quot;,i1, i2, i1/i2); double d1 = 7, d2 = 2; System.out.println(&quot;Double Division&quot;); System.out.println(&quot; tdouble output with concatenation: &quot; + d1 + &quot;/&quot; + d2 + &quot; = &quot; + d1/d2); System.out.println(String.format(&quot; tdouble output with format: %.2f/%.2f = %.2f&quot;,d1, d2, d1/d2)); System.out.printf(&quot; tdouble output with printf: %.2f/%.2f = %.2f n&quot;,d1, d2, d1/d2); System.out.println(&quot;Casting and Remainders&quot;); System.out.printf(&quot; tint cast to double on division: %d/%d = %.2f n&quot;,i1, i2, i1/(double)i2); System.out.println(&quot; tint using modulo for remainder: &quot; + i1 + &quot;/&quot; + i2 + &quot; = &quot; + i1/i2 + &quot; remainder &quot; + i1%i2); } } PrimitiveDivision.main(null); . public class GradeCalculator { // introduction to Double wrapper class (object) ArrayList&lt;Double&gt; grades; // similar to Python list // constructor, initializes ArrayList and call enterGrades method public GradeCalculator() { this.grades = new ArrayList&lt;&gt;(); this.enterGrades(); } // double requires test for zero versus threshold, DO NOT compare to Zero private boolean isZero(double value){ double threshold = 0.001; return value &gt;= -threshold &amp;&amp; value &lt;= threshold; } // enterGrades input method using scanner private void enterGrades() { Scanner input; while (true) { input = new Scanner(System.in); System.out.print(&quot;Enter a double, 0 to exit: &quot;); try { double sampleInputDouble = input.nextDouble(); System.out.println(sampleInputDouble); if (isZero(sampleInputDouble)) break; // exit loop on isZero else this.grades.add(sampleInputDouble); // adding to object, ArrayList grades } catch (Exception e) { // if not a number System.out.println(&quot;Not an double (form like 9.99), &quot; + e); } input.close(); } } // average calculation public double average() { double total = 0; // running total for (double num : this.grades) { // enhanced for loop total += num; // shortcut add and assign operator } return (total / this.grades.size()); // double math, ArrayList grades object maintains its size } // static main method, used as driver and tester public static void main(String[] args) { GradeCalculator grades = new GradeCalculator(); // calls constructor, creates object, which calls enterGrades System.out.println(&quot;Average: &quot; + String.format(&quot;%.2f&quot;, grades.average())); // format used to standardize to two decimal points } } // IJava activation GradeCalculator.main(null); .",
             "url": "https://deimie.github.io/fastpages/2022/08/26/primitives.html",
@@ -78,7 +89,7 @@
     
   
     
-        ,"post7": {
+        ,"post8": {
             "title": "Bash",
             "content": "cd vscode ls . bash: cd: vscode: No such file or directory 2022-08-22-javaNotebook.ipynb README.md 2022-08-22-pythonNotebook.ipynb ghtop_images 2022-08-25-bash.ipynb my_icons 2022-08-26-primitives.ipynb . python --version python2 --version java --version javac --version . Python 3.9.12 Python 2.7.18 openjdk 17.0.4 2022-07-19 OpenJDK Runtime Environment Temurin-17.0.4+8 (build 17.0.4+8) OpenJDK 64-Bit Server VM Temurin-17.0.4+8 (build 17.0.4+8, mixed mode, sharing) javac 17.0.4 . jupyter kernelspec list . Available kernels: bash /Users/evan/Library/Jupyter/kernels/bash java /Users/evan/Library/Jupyter/kernels/java javascript /Users/evan/Library/Jupyter/kernels/javascript python3 /Users/evan/opt/anaconda3/share/jupyter/kernels/python3 .",
             "url": "https://deimie.github.io/fastpages/2022/08/25/bash.html",
@@ -89,7 +100,7 @@
     
   
     
-        ,"post8": {
+        ,"post9": {
             "title": "Python Notebook",
             "content": "n = int(input(&#39;Type the nth term in the fibonacci sequence: &#39;)) def fibonacci(n): a=0 b=1 fibList = [0] # there are no negative nth terms allowed if n &lt;=0: print(&#39;Input must be greater than 0.&#39;) fibonacci() # restart the program # instead of using logic for the whole sequence, it&#39;s easier to make the 1st term always return 0. elif n == 1: print(fibList) return else: fibList.append(1) # for loop will go through each number of the sequence and append them into the list. for i in range(2,n): c = a + b a = b b = c fibList.append(c) print(fibList) # print final result fibonacci(n) . [0, 1, 1, 2, 3] .",
             "url": "https://deimie.github.io/fastpages/2022/08/22/pythonNotebook.html",
@@ -100,7 +111,7 @@
     
   
     
-        ,"post9": {
+        ,"post10": {
             "title": "Java Notebook",
             "content": "// Define Static Method within a Class public class HelloStatic { // Java standard runtime entry point public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } // A method call allows us to execute code that is wrapped in Class HelloStatic.main(null); // Class prefix allows reference of Static Method . Hello World! .",
             "url": "https://deimie.github.io/fastpages/2022/08/22/javaNotebook.html",
@@ -111,7 +122,7 @@
     
   
     
-        ,"post10": {
+        ,"post11": {
             "title": "Tool Setup - Week 0",
             "content": "Github Link . Fastpages with post . Build personal Fastpages / GitHub pages “_post” share the following. . | Share link to personal Fastpages / GitHub pages running on github.io. . | My suggestion is to change index.html to show it is really yours. . | Share link to a new page (_posts) in your Fastpages project show use of Markdown and/or HTML fragments. You will need to learn special date requirements of a file as well as a little Markdown or HTML. . | Share link to Python Jupyter notebook (_notebooks) showing usage of Python: print (“Hello”) . | Share link to Java Jupyter notebook (_notebooks) showing usage of Java: System.out.println(“Hello”) . | Capture image/screen capture of Fastpages project showing use of an Integrated Development Environment (VS Studio) . | Share link showing your GitHub insights. This is your personal activity of commit history. . | . Java project running on localhost:8080 .",
             "url": "https://deimie.github.io/fastpages/markdown/2022/08/22/Tool-Setup-Week-0.html",
