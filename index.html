@@ -18,6 +18,101 @@ image: images/logo.png
 
 {% include app_nav.html %}
 
-{% include ghTeam.html %}
+<script>
+    
+    function Person(name, ghID, classOf) {
+    this.name = name;
+    this.ghID = ghID;
+    this.classOf = classOf;
+    this.role = "";
+    }
+
+    Person.prototype.setRole = function(role) {
+        this.role = role;
+    }
+
+    Person.prototype.toJSON = function() {
+        const obj = {name: this.name, ghID: this.ghID, classOf: this.classOf, role: this.role};
+        const json = JSON.stringify(obj); 
+        return json;
+    }
+
+    var teacher = new Person("John Mortenson", "jm1021", 1977);
+    dataType(teacher); 
+    dataType(teacher.toJSON()); 
+
+    teacher.setRole("Teacher");  
+    dataType(teacher); 
+    dataType(teacher.toJSON());
+
+    var students = [ 
+    new Person("Evan Sanchez", "deimie", 2023),
+    new Person("Calissa Tyrrell", "CalissaT", 2023),
+    new Person("Samuel Wang", "Samuelwaang", 2023),
+    new Person("Kian Pasokhi", "kiannp44", 2023),
+    ];
+
+    function Classroom(teacher, students){
+
+        teacher.setRole("Teacher");
+        this.teacher = teacher;
+        this.classroom = [teacher];
+
+        this.students = students;
+        this.students.forEach(student => { student.setRole("Student"); this.classroom.push(student); });
+
+        this.json = [];
+        this.classroom.forEach(person => this.json.push(person.toJSON()));
+    }
+
+    compsci = new Classroom(teacher, students);
+
+    dataType(compsci.classroom); 
+    dataType(compsci.classroom[0].name);
+    dataType(compsci.json[0]);  
+    dataType(JSON.parse(compsci.json[0]));  
+
+    Classroom.prototype._toHtml = function() {
+
+        var style = (
+      `<style> 
+        .dataTable th{ 
+          color: gray; 
+        } 
+      </style>`
+    );
+  
+    var body = "";
+
+    body += "<tr>";
+    body += "<th>" + "Name" + "</th>";
+    body += "<th>" + "GitHub ID" + "</th>";
+    body += "<th>" + "Class Of" + "</th>";
+    body += "<th>" + "Role" + "</th>";
+    body += "</tr>";
+
+    for (var row in compsci.classroom) {
+      body += "<tr>";
+      body += "<td>" + compsci.classroom[row].name + "</td>";
+      body += "<td>" + compsci.classroom[row].ghID + "</td>";
+      body += "<td>" + compsci.classroom[row].classOf + "</td>";
+      body += "<td>" + compsci.classroom[row].role + "</td>";
+      body += "<tr>";
+    }
+  
+    return (
+      style +
+      "<div>" +
+        "<table class='dataTable'>" +
+          body +
+        "</table>" +
+      "</div>"
+    );
+  
+  };
+  
+  $$.html(compsci._toHtml())  
+
+</script>
 
 # Posts
