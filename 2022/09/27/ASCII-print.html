@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Title | Fastpages</title>
+<title>ASCII Art | Fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Title" />
+<meta property="og:title" content="ASCII Art" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Evan Sanchez" />
 <meta property="og:description" content="Evan Sanchez" />
@@ -16,9 +16,9 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-09-27T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Title" />
+<meta property="twitter:title" content="ASCII Art" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-27T00:00:00-05:00","datePublished":"2022-09-27T00:00:00-05:00","description":"Evan Sanchez","headline":"Title","mainEntityOfPage":{"@type":"WebPage","@id":"https://deimie.github.io/fastpages/2022/09/27/ASCII-print.html"},"url":"https://deimie.github.io/fastpages/2022/09/27/ASCII-print.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-27T00:00:00-05:00","datePublished":"2022-09-27T00:00:00-05:00","description":"Evan Sanchez","headline":"ASCII Art","mainEntityOfPage":{"@type":"WebPage","@id":"https://deimie.github.io/fastpages/2022/09/27/ASCII-print.html"},"url":"https://deimie.github.io/fastpages/2022/09/27/ASCII-print.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://deimie.github.io/fastpages/feed.xml" title="Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,7 +73,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-27T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">ASCII Art</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-27T00:00:00-05:00" itemprop="datePublished">
         Sep 27, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -344,24 +344,36 @@ window.onload = wrap_img;
     <span class="c1">// conversion table, there may be better out there ie https://www.billmongan.com/Ursinus-CS173-Fall2020/Labs/ASCIIArt</span>
     <span class="kd">public</span> <span class="n">String</span> <span class="nf">asciiChar</span><span class="p">(</span><span class="kt">double</span> <span class="n">g</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">240</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">245</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">210</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">238</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;¸&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">230</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;&#39;&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">220</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;.&quot;</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">190</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">170</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;+&quot;</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">120</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">215</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;-&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">210</span><span class="p">){</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;~&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;^&quot;</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">110</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">190</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;+&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">170</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">140</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;=&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">120</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;&amp;&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">110</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;%&quot;</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;8&quot;</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;#&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;@&quot;</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">g</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+            <span class="n">str</span> <span class="o">=</span> <span class="s">&quot;■&quot;</span><span class="p">;</span>
         <span class="p">}</span>
         <span class="k">return</span> <span class="n">str</span><span class="p">;</span>
     <span class="p">}</span>
