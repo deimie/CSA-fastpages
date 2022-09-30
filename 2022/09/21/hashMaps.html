@@ -160,11 +160,6 @@ window.onload = wrap_img;
     
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
 
-        <span class="c1">// just some random variables to manage</span>
-        <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">33</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">59</span><span class="p">;</span>
-
         <span class="c1">// instatiate &quot;firstHash&quot; object from the class &quot;HashMap&quot;</span>
         <span class="c1">// putting &lt;dataType1, dataType2, etc...&gt; explicitly tells the program what each value will be</span>
         <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">firstHash</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Integer</span><span class="o">&gt;</span><span class="p">();</span> 
@@ -179,9 +174,25 @@ window.onload = wrap_img;
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">firstHash</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="s">&quot;c&quot;</span><span class="p">));</span>
     <span class="p">}</span>
 <span class="p">}</span>
+
+<span class="n">HashMaps</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>59
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -195,22 +206,96 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">advancedHashMap</span> <span class="p">{</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">advancedHashMap</span> <span class="p">{</span>
 
         <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">Hashmap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">advancedHashMap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+
+                <span class="c1">// construct new &quot;advancedHashMap&quot; object from &quot;HashMap&quot; class</span>
+                <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">advancedHashMap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
 
                 <span class="n">advancedHashMap</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Evan&quot;</span><span class="p">,</span> <span class="s">&quot;Password123&quot;</span><span class="p">);</span>
                 <span class="n">advancedHashMap</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Calissa&quot;</span><span class="p">,</span> <span class="s">&quot;P@55w0rd123!&quot;</span><span class="p">);</span>
                 <span class="n">advancedHashMap</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Kian&quot;</span><span class="p">,</span> <span class="s">&quot;myPassword&quot;</span><span class="p">);</span>
                 <span class="n">advancedHashMap</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&quot;Samuel&quot;</span><span class="p">,</span> <span class="s">&quot;m13_p@55w0rd?!?&quot;</span><span class="p">);</span>
 
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">advancedHashMap</span><span class="p">);</span> 
+                <span class="n">advancedHashMap</span><span class="p">.</span><span class="na">forEach</span><span class="p">((</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">{</span>
+                        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Username: &quot;</span> <span class="o">+</span> <span class="n">key</span><span class="p">);</span>
+                        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Password: &quot;</span> <span class="o">+</span> <span class="n">value</span><span class="p">);</span>
+                        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+                <span class="p">});</span>
+
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">advancedHashMap</span><span class="p">);</span>
         <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">advancedHashMap</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Username: Samuel
+Password: m13_p@55w0rd?!?
+
+Username: Kian
+Password: myPassword
+
+Username: Calissa
+Password: P@55w0rd123!
+
+Username: Evan
+Password: Password123
+
+{Samuel=m13_p@55w0rd?!?, Kian=myPassword, Calissa=P@55w0rd123!, Evan=Password123}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">temp</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Test&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Test
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
