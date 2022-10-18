@@ -98,6 +98,24 @@ This lesson branched off 13 a bit with the concept. To be honest the last few le
 ### Lesson 15
 The final lesson was simply a FRQ asking about your best software engineer qualitly. Not a real lesson.
 
+### Boolean Expressions
+* Operators
+  * ```==``` Equal to
+  * ```!=``` Not equal to
+  * ```<``` Less than
+  * ```<=``` Less than or equal to
+ 
+ * Compound Boolean Expressions
+   * Nested if statements: ```if``` statements within ```if``` statements
+ * Logical Operators:
+   * ``` &&``` AND
+   * ```||``` OR
+   * ```!``` NOT
+ 
+ * Short circuited evaluation - A compound boolean expression can have a determined outcome based on just a few operators
+ * De Morgan's Law
+   * Dictates that a ```NOT``` statement changes an ```AND``` to an ```OR``` and vice versa.
+
 ---
 
 ## Class Notes
