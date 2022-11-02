@@ -4,6 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-Evan Sanchez
+<html>
+    
 
-I am a CSA student at Del Norte High School!
+</html>
