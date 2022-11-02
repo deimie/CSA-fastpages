@@ -80,6 +80,9 @@ window.onload = wrap_img;
         height: 90px;
         width: 90px;
     }
+    table {
+      border:none;
+    }
 </style>
 
 <p><span class="inlineHeader"> Welcome to my page! </span>
@@ -117,103 +120,6 @@ window.onload = wrap_img;
     </table>
 </html>
 
-<script>
-    
-    function Person(name, ghID, classOf) {
-    this.name = name;
-    this.ghID = ghID;
-    this.classOf = classOf;
-    this.role = "";
-    }
-
-    Person.prototype.setRole = function(role) {
-        this.role = role;
-    }
-
-    Person.prototype.toJSON = function() {
-        const obj = {name: this.name, ghID: this.ghID, classOf: this.classOf, role: this.role};
-        const json = JSON.stringify(obj); 
-        return json;
-    }
-
-    var teacher = new Person("John Mortenson", "jm1021", 1977);
-    dataType(teacher); 
-    dataType(teacher.toJSON()); 
-
-    teacher.setRole("Teacher");  
-    dataType(teacher); 
-    dataType(teacher.toJSON());
-
-    var students = [ 
-    new Person("Evan Sanchez", "deimie", 2023),
-    new Person("Calissa Tyrrell", "CalissaT", 2023),
-    new Person("Samuel Wang", "Samuelwaang", 2023),
-    new Person("Kian Pasokhi", "kiannp44", 2023),
-    ];
-
-    function Classroom(teacher, students){
-
-        teacher.setRole("Teacher");
-        this.teacher = teacher;
-        this.classroom = [teacher];
-
-        this.students = students;
-        this.students.forEach(student => { student.setRole("Student"); this.classroom.push(student); });
-
-        this.json = [];
-        this.classroom.forEach(person => this.json.push(person.toJSON()));
-    }
-
-    compsci = new Classroom(teacher, students);
-
-    dataType(compsci.classroom); 
-    dataType(compsci.classroom[0].name);
-    dataType(compsci.json[0]);  
-    dataType(JSON.parse(compsci.json[0]));  
-
-    Classroom.prototype._toHtml = function() {
-
-        var style = (
-      `<style> 
-        .dataTable th{ 
-          color: gray; 
-        } 
-      </style>`
-    );
-  
-    var body = "";
-
-    body += "<tr>";
-    body += "<th>" + "Name" + "</th>";
-    body += "<th>" + "GitHub ID" + "</th>";
-    body += "<th>" + "Class Of" + "</th>";
-    body += "<th>" + "Role" + "</th>";
-    body += "</tr>";
-
-    for (var row in compsci.classroom) {
-      body += "<tr>";
-      body += "<td>" + compsci.classroom[row].name + "</td>";
-      body += "<td>" + compsci.classroom[row].ghID + "</td>";
-      body += "<td>" + compsci.classroom[row].classOf + "</td>";
-      body += "<td>" + compsci.classroom[row].role + "</td>";
-      body += "<tr>";
-    }
-  
-    return (
-      style +
-      "<div>" +
-        "<table class='dataTable'>" +
-          body +
-        "</table>" +
-      "</div>"
-    );
-  
-  };
-  
-  $$.html(compsci._toHtml())  
-
-</script>
-
 <h1 id="posts">Posts</h1>
 
 
@@ -234,7 +140,16 @@ window.onload = wrap_img;
 
    <!-- Assemble final sorted posts array -->
   
-  <ul class="post-list"><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-4 d-table-cell p-3 v-align-middle">
+  <ul class="post-list"><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
+        <h3>
+          <a class="post-link" href="/fastpages/2022/10/22/22-unit5-work.html">
+            Unit 5 Lesson
+          </a>
+        </h3>
+        <p class="post-meta-description"></p>
+          <p class="post-meta">Oct 22, 2022</p>
+      </div>
+  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-4 d-table-cell p-3 v-align-middle">
         <img class="image-preview " src="/fastpages/images/collegeBoard.png" />
       </div><div class="col-8 d-table-cell p-3">
         <h3>
@@ -301,22 +216,22 @@ window.onload = wrap_img;
           <p class="post-meta">Sep 22, 2022</p>
       </div>
   </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-4 d-table-cell p-3 v-align-middle">
-        <img class="image-preview " src="/fastpages/images/javaLogo.png" />
+        <img class="image-preview " src="/fastpages/images/javascript.jpg" />
       </div><div class="col-8 d-table-cell p-3">
         <h3>
-          <a class="post-link" href="/fastpages/2022/09/21/hashMaps.html">
-            Hash Maps
+          <a class="post-link" href="/fastpages/2022/09/21/js-notes.html">
+            Javascript Notes
           </a>
         </h3>
         <p class="post-meta-description"></p>
           <p class="post-meta">Sep 21, 2022</p>
       </div>
   </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-4 d-table-cell p-3 v-align-middle">
-        <img class="image-preview " src="/fastpages/images/javascript.jpg" />
+        <img class="image-preview " src="/fastpages/images/javaLogo.png" />
       </div><div class="col-8 d-table-cell p-3">
         <h3>
-          <a class="post-link" href="/fastpages/2022/09/21/js-notes.html">
-            Javascript Notes
+          <a class="post-link" href="/fastpages/2022/09/21/hashMaps.html">
+            Hash Maps
           </a>
         </h3>
         <p class="post-meta-description"></p>
@@ -387,17 +302,6 @@ window.onload = wrap_img;
         </h3>
         <p class="post-meta-description">CSA Week 1</p>
           <p class="post-meta">Aug 29, 2022</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-4 d-table-cell p-3 v-align-middle">
-        <img class="image-preview " src="/fastpages/images/jupyter.png" />
-      </div><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/fastpages/markdown/2022/08/26/primitives.html">
-            Primitives
-          </a>
-        </h3>
-        <p class="post-meta-description"></p>
-          <p class="post-meta">Aug 26, 2022</p>
       </div>
   </div></li></ul>
 
