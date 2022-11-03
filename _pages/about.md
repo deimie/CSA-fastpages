@@ -23,7 +23,7 @@ permalink: /about/
         <div class="center" style="height:100px;">
             <span> Hi, my name is </span> <br>
             <span class="header">Evan Sanchez</span> <br>
-            <a href="https://github.com/deimie"><img height="50px;" src="/images/githubLogo.png"></a
+            <a href="https://github.com/deimie"><img height="50px;" src="/images/githubLogo.png"></a>
         </div>
         <div class="center">
             <p>I am a high school senior at Del Norte High School, presently enrolled in AP Computer Science A.
