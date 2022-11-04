@@ -1,6 +1,7 @@
 ---
-categories: [java]
+keywords: fastai
 title: Java Notebook
+image: images/javaLogo.png
 nb_path: _notebooks/2022-08-22-javaNotebook.ipynb
 layout: notebook
 ---
