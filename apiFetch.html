@@ -1,0 +1,107 @@
+---
+layout: post
+title: Covid API Live Fetch
+permalink: /apiFetch/
+---
+
+<style>
+    .main {
+        margin: auto;
+        width: 60%;
+        text-align: center;
+    }
+</style>
+
+<html>
+    <body>
+
+        <div class="main">
+            <h3 id="clock"></h3>
+
+            <table>
+                <tr>
+                    <th colspan="4"> International Covid-19 Info </th>
+                </tr>
+                <tr>
+                    <td> Active Cases </td>
+                    <td> New Recoveries </td>
+                    <td> New Cases </td>
+                    <td> New Deaths </td>
+                </tr>
+                <tr>
+                    <td id="activeCases">Loading...</td>
+                    <td id="newRecoveries">Loading...</td>
+                    <td id="newCases">Loading...</td>
+                    <td id="newDeaths">Loading...</td>
+                </tr>
+            </table>
+
+            <a href="https://rapidapi.com/vaccovidlive-vaccovidlive-default/api/vaccovid-coronavirus-vaccine-and-treatment-tracker/">API Source</a>
+        </div>
+
+    </body>
+</html>
+
+<script>
+
+// API key stuff
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '56fbb90d5dmsh03022062645ef2ep1e7dabjsn91f3cf3866a7',
+		'X-RapidAPI-Host': 'vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com'
+	}
+};
+// --------------------
+
+
+// fetch stuff
+fetch('https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/world', options)
+	.then(response => response.json())
+    .then(response => {
+        console.log(response);
+        console.log(response[0].ActiveCases);
+
+        document.getElementById("activeCases").innerHTML = response[0].ActiveCases;
+
+    })
+	.catch(err => console.error(err));
+
+// --------------------
+
+// non API data points
+let newDeaths = 0;
+
+document.getElementById("newRecoveries").innerHTML = 0;
+document.getElementById("newDeaths").innerHTML = newDeaths;
+document.getElementById("newCases").innerHTML = 0;
+
+// --------------------
+
+// clock which updates every 1000ms (1 second)
+let clockElement = document.getElementById('clock')
+
+clock();
+function clock() {
+    let time = new Date();
+    clockElement.textContent = time.toLocaleString();
+
+}
+setInterval(clock, 1000);
+
+// --------------------
+
+// other clock
+update();
+function update() {
+    document.getElementById("activeCases").innerHTML = parseInt(document.getElementById("activeCases").innerHTML) + 17;
+    document.getElementById("newCases").innerHTML = parseInt(document.getElementById("newCases").innerHTML) + 17;
+    document.getElementById("newRecoveries").innerHTML = parseInt(document.getElementById("newRecoveries").innerHTML) + 23;
+    
+    newDeaths += .03;
+    document.getElementById("newDeaths").innerHTML = Math.round(newDeaths);
+
+
+} setInterval(update,100);
+
+</script>
