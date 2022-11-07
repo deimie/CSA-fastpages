@@ -4,6 +4,12 @@ title: Blog
 permalink: /blog/
 ---
 
+### Week 0
+
+### Week 1
+
+### Week 2
+
 ### Week 3
 
 This week we had to work on a lesson for java conditionals, and I also decided to add documentation about De Morgan's law. The basic run down is that an ```if``` 
@@ -18,3 +24,21 @@ There are of course scenarios that help with promoting happiness such as wealth 
 money to get by boosts my happiness, but money is certainly not a huge priority in this case. Often times people with too much money end up losing personal connections  
 and relationships with people they once knew well. All in all, happiness is a very fickle thing that will always remain important to try to maintain in whatever way
 works best for you.
+
+### Week 4
+
+### Week 5
+
+### Week 6
+
+### Week 7
+
+### Week 8
+
+### Week 9
+
+### Week 10
+
+### Week 11
+
+### Week 12
