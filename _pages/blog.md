@@ -6,11 +6,15 @@ permalink: /blog/
 
 ### Week 0 - Introduction and Tools
 
-
+This week we worked on setting up our tools for the rest of the trimester. We talked about how we will begin with making real-world projects that serve actual functions. These projects will manage databases in backened. Assignments will be due on either Fridays or Mondays depeding on the criteria. We will be using slack, jupyter notebooks, github pages, vscode, and AWS.
 
 ### Week 1 - Innovation Pair Focus
 
+This week we learned about primatives, which are a datatype in Java. More info on primitaves in posts. Talked about practicing pair programming, where 2 people program and share code frequently to build off each other. Mostly, I've been setting up fastpages and I implemented a dark mode. Working on a weird post icon formatting issue as well.
+
 ### Week 2 - Using Objects
+
+This week is lots of code.org work. We're learning basically how to program in java. Lots of info on code.org documentation in the notes page. We had to create a GUI using java in a jupyter notebook. All grading will be done by reviewing our jupyter notebooks in fastpages.
 
 ### Week 3 - Backend Development
 
