@@ -48,3 +48,15 @@ works best for you.
 ### Week 11 - Project Week 4
 
 ### Week 12 - Finals Week
+**Test corrections-**
+Q17- Only values in arr at the start of the iteration will be in arr when the loop terminates. The value 8 is not in arr at the start of the loop. To avoid an ArrayIndexOutOfBoundsException from being thrown, the loop terminates when k has the value arr.length – 1, therefore the element at arr[arr.length – 1] is never assigned a new value.
+
+Q20- Since j and k start at valid indices of nums with j being less than k, and since j is being incremented and k is being decremented in the body of the loop, eventually j will be greater than or equal to k without either becoming an invalid index so an ArrayIndexOutOfBoundsException will not occur.
+
+Q23- List is an interface, which an ArrayList implements. Please note that List is no longer tested as part of the AP CSA exam and ArrayList will be used instead. This would be the case if the loop condition was k > 1 rather than k > 0.
+
+Q31- Passing a reference parameter results in the formal parameter and the actual parameter being aliases. They both refer to the same object. Any updates made to the referenced array when mystery is called are being made on the single array that is reference by both data and values. When data[k + 1] is updated, this value new value should be used in the subsequent calculations.
+
+Q34- Choice I uses the no parameter Point constructor to assign center a new Point with x and y both equal to 0, instead of x assigned the value a and y assigned the value b. Choice II correctly uses the two parameter Point constructor to create a new Point with x assigned the value a and y assigned the value b.
+
+Q39- The value of recur(6) is 12. However, this call was made within another recursive call and is not the final return value
