@@ -32,19 +32,41 @@ and relationships with people they once knew well. All in all, happiness is a ve
 works best for you.
 
 ### Week 4 - FRQ No. 1
+This week, me and Calissa worked on 2 FRQ problems together. I was mainly in charge of FRQ question 2 on the 2019 APCSA collegeboard test. My in-depth solution to the problem is [here](https://deimie.github.io/fastpages/2022/09/19/unit1-lesson.html).
 
 ### Week 5 - Design Starters
+This week was all coding challenges from Mr. M. The main one was running a fibonacci sequence using classes in Java. I did that [here](https://deimie.github.io/fastpages/2022/09/22/fibonacci-java.html). We also practiced using javascript to manage JSON data and create HTML elements with javascript methods. Examples [here](https://deimie.github.io/fastpages/2022/09/21/js-notes.html).
 
 ### Week 6 - Project Approval
+Okay so this week we had to finalize and present our idea for our project. We decided on making a sort of class manager where students log in with their github usernames. This means that the teacher can access students and their github accounts easily. We also have to practice connecting an API to our frontend. I just quickly did a covid API and it just prints out some JSON data.
 
 ### Week 7 - Arraylists
+This week we're being taught about arraylists. Funny enough, my group's topic which we have to present is arraylists, so we kind of already knew everything. This week was also dedicated to learning how to connect a frontend and backend server with an API. For the time being, I still have to fix our broken backend and create a frontend as the DevOps. 
 
 ### Week 8 - Project Week 1
+
 
 ### Week 9 - Project Week 2
 
 ### Week 10 - Project Week 3
+Instead of doing student lessons, the curriculum was transitioned over entirely to working on our projects to prepare for N@TM. So far, our project is pretty underdeveloped, so we still have to connect our front and backends with an API and implement a database mostly. Our frontend is pretty bad looking too, but that's not my job.
 
 ### Week 11 - Project Week 4
+Earlier in the week we made the frontend much more functional, connected it to the backend, and we have a working databse that can add inputs (it can't remove them yet). On thursday we had our N@TM. Most people that didn't take CSA looked pretty confused by our project, as it was pretty raw looking, but Mr. M liked the database so that's cool.
 
 ### Week 12 - Finals Week
+**Test corrections-**
+
+![Screen Shot 2022-11-09 at 8 30 27 AM](https://user-images.githubusercontent.com/24465360/200886290-dad002ad-eaf8-4aa0-bdb0-88bacb0954ce.png)
+
+**Q17-** Only values in arr at the start of the iteration will be in arr when the loop terminates. The value 8 is not in arr at the start of the loop. To avoid an ArrayIndexOutOfBoundsException from being thrown, the loop terminates when k has the value arr.length – 1, therefore the element at arr[arr.length – 1] is never assigned a new value.
+
+**Q20-** Since j and k start at valid indices of nums with j being less than k, and since j is being incremented and k is being decremented in the body of the loop, eventually j will be greater than or equal to k without either becoming an invalid index so an ArrayIndexOutOfBoundsException will not occur.
+
+**Q23-** List is an interface, which an ArrayList implements. Please note that List is no longer tested as part of the AP CSA exam and ArrayList will be used instead. This would be the case if the loop condition was k > 1 rather than k > 0.
+
+**Q31-** Passing a reference parameter results in the formal parameter and the actual parameter being aliases. They both refer to the same object. Any updates made to the referenced array when mystery is called are being made on the single array that is reference by both data and values. When data[k + 1] is updated, this value new value should be used in the subsequent calculations.
+
+**Q34-** Choice I uses the no parameter Point constructor to assign center a new Point with x and y both equal to 0, instead of x assigned the value a and y assigned the value b. Choice II correctly uses the two parameter Point constructor to create a new Point with x assigned the value a and y assigned the value b.
+
+**Q39-** The value of recur(6) is 12. However, this call was made within another recursive call and is not the final return value
