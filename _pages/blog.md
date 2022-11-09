@@ -32,8 +32,10 @@ and relationships with people they once knew well. All in all, happiness is a ve
 works best for you.
 
 ### Week 4 - FRQ No. 1
+This week, me and Calissa worked on 2 FRQ problems together. I was mainly in charge of FRQ question 2 on the 2019 APCSA collegeboard test. My in-depth solution to the problem is [here](https://deimie.github.io/fastpages/2022/09/19/unit1-lesson.html).
 
 ### Week 5 - Design Starters
+This week was all coding challenges from Mr. M. The main one was running a fibonacci sequence using classes in Java. I did that [here](https://deimie.github.io/fastpages/2022/09/22/fibonacci-java.html). We also practiced using javascript to manage JSON data and create HTML elements with javascript methods. Examples [here](https://deimie.github.io/fastpages/2022/09/21/js-notes.html).
 
 ### Week 6 - Project Approval
 
@@ -44,8 +46,10 @@ works best for you.
 ### Week 9 - Project Week 2
 
 ### Week 10 - Project Week 3
+Instead of doing student lessons, the curriculum was transitioned over entirely to working on our projects to prepare for N@TM. So far, our project is pretty underdeveloped, so we still have to connect our front and backends with an API and implement a database mostly. Our frontend is pretty bad looking too, but that's not my job.
 
 ### Week 11 - Project Week 4
+Earlier in the week we made the frontend much more functional, connected it to the backend, and we have a working databse that can add inputs (it can't remove them yet). On thursday we had our N@TM. Most people that didn't take CSA looked pretty confused by our project, as it was pretty raw looking, but Mr. M liked the database so that's cool.
 
 ### Week 12 - Finals Week
 **Test corrections-**
