@@ -116,6 +116,3 @@ The final lesson was simply a FRQ asking about your best software engineer quali
  * De Morgan's Law
    * Dictates that a ```NOT``` statement changes an ```AND``` to an ```OR``` and vice versa.
 
----
-
-## Class Notes
