@@ -38,10 +38,13 @@ This week, me and Calissa worked on 2 FRQ problems together. I was mainly in cha
 This week was all coding challenges from Mr. M. The main one was running a fibonacci sequence using classes in Java. I did that [here](https://deimie.github.io/fastpages/2022/09/22/fibonacci-java.html). We also practiced using javascript to manage JSON data and create HTML elements with javascript methods. Examples [here](https://deimie.github.io/fastpages/2022/09/21/js-notes.html).
 
 ### Week 6 - Project Approval
+Okay so this week we had to finalize and present our idea for our project. We decided on making a sort of class manager where students log in with their github usernames. This means that the teacher can access students and their github accounts easily. We also have to practice connecting an API to our frontend. I just quickly did a covid API and it just prints out some JSON data.
 
 ### Week 7 - Arraylists
+This week we're being taught about arraylists. Funny enough, my group's topic which we have to present is arraylists, so we kind of already knew everything. This week was also dedicated to learning how to connect a frontend and backend server with an API. For the time being, I still have to fix our broken backend and create a frontend as the DevOps. 
 
 ### Week 8 - Project Week 1
+
 
 ### Week 9 - Project Week 2
 
