@@ -44,9 +44,10 @@ Okay so this week we had to finalize and present our idea for our project. We de
 This week we're being taught about arraylists. Funny enough, my group's topic which we have to present is arraylists, so we kind of already knew everything. This week was also dedicated to learning how to connect a frontend and backend server with an API. For the time being, I still have to fix our broken backend and create a frontend as the DevOps. 
 
 ### Week 8 - Project Week 1
-
+This week we had a lesson on using Java objects. Here's the [homework](https://deimie.github.io/fastpages/2022/10/18/22-unit3-hw.html). We mostly worked on project stuff this week.
 
 ### Week 9 - Project Week 2
+We were supposed to have a bunch of lessons this week but things really fell apart so theres a bunch of stuff that didn't happen. I was also out sick for most of this week, so I missed all the lessons... anyways here's some of the code HW that I did with Calissa: [HW](https://deimie.github.io/fastpages/2022/10/24/unit4-hw.html).
 
 ### Week 10 - Project Week 3
 Instead of doing student lessons, the curriculum was transitioned over entirely to working on our projects to prepare for N@TM. So far, our project is pretty underdeveloped, so we still have to connect our front and backends with an API and implement a database mostly. Our frontend is pretty bad looking too, but that's not my job.
