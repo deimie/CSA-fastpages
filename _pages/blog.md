@@ -4,6 +4,12 @@ title: Blog
 permalink: /blog/
 ---
 
+### Week 14
+We did FRQ2 this week. It's kinda similar to FRQ1 but with some different methods and data points. I managed to get the tester and toString method working, but overall, I did not have the time to finish lots of the criteria.
+
+### Week 13
+This week we had to do FRQ1 from collegeboard. I learned about this complicated algorithm called Zeller's rule which helps find the day of the week for any given date. In Zeller's rule, the first month of the year is also march and the last is february. For the actual work completion, I managed to finish all the methods, but I only have the 1 original endpoint, as I was struggling with understanding weird syntax stuff.
+
 ### Week 12 - Finals Week
 **Test corrections-**
 
