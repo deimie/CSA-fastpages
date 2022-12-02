@@ -4,6 +4,9 @@ title: Blog
 permalink: /blog/
 ---
 
+### Week 15
+This week was mostly me catching up on all the homework I've been behind on. When the homework and lessons happened last trimester, I was absent for a few days and I missed a few. Overall the homework/hacks were pretty easy, so this week wasn't too difficult. I also ended up doing the vocab on a bunch of java terms. I haven't done every single term, but I've done a good amount. I plan to finish that bit over the weekend most likely.
+
 ### Week 14
 We did FRQ2 this week. It's kinda similar to FRQ1 but with some different methods and data points. I managed to get the tester and toString method working, but overall, I did not have the time to finish lots of the criteria.
 
