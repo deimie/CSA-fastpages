@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      11 min read
     
 </span></p>
 
@@ -305,8 +305,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// Key instance variables</span>
-<span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">expression</span><span class="p">;</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">expression</span><span class="p">;</span>
 <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">tokens</span><span class="p">;</span>
 <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">reverse_polish</span><span class="p">;</span>
 <span class="kd">private</span> <span class="n">Double</span> <span class="n">result</span><span class="p">;</span>
@@ -337,6 +336,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    public Calculator(String</span><span class="ansi-black-intense-fg ansi-bold"> expression) {</span>
+<span class="ansi-red-intense-fg ansi-bold">')' expected</span>
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -521,6 +536,44 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    for (String token : </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">tokens</span><span class="ansi-black-intense-fg ansi-bold">) {</span>
+<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
+<span class="ansi-red-intense-fg ansi-bold">  symbol:   variable tokens</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">                </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">tokenStack.push(token)</span><span class="ansi-black-intense-fg ansi-bold">;</span>
+<span class="ansi-red-intense-fg ansi-bold">unchecked call to push(E) as a member of the raw type java.util.Stack</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">                while (tokenStack.peek() != null &amp;&amp; </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">isOperator</span><span class="ansi-black-intense-fg ansi-bold">((String) tokenStack.peek()))</span>
+<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
+<span class="ansi-red-intense-fg ansi-bold">  symbol:   method isOperator(java.lang.String)</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">                    if ( </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">isPrecedent</span><span class="ansi-black-intense-fg ansi-bold">(token, (String) tokenStack.peek() )) {</span>
+<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
+<span class="ansi-red-intense-fg ansi-bold">  symbol:   method isPrecedent(java.lang.String,java.lang.String)</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">                </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">tokenStack.push(token)</span><span class="ansi-black-intense-fg ansi-bold">;</span>
+<span class="ansi-red-intense-fg ansi-bold">unchecked call to push(E) as a member of the raw type java.util.Stack</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">                </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">this</span><span class="ansi-black-intense-fg ansi-bold">.reverse_polish.add(token);</span>
+<span class="ansi-red-intense-fg ansi-bold">non-static variable this cannot be referenced from a static context</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">                </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">this.reverse_polish</span><span class="ansi-black-intense-fg ansi-bold">.add(token);</span>
+<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
+<span class="ansi-red-intense-fg ansi-bold">  symbol: variable reverse_polish</span>
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
