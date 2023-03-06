@@ -4,6 +4,9 @@ title: Blog
 permalink: /blog/
 ---
 
+### Week 16
+This week I was on the unit homework grindset. I just did lots of work for the student lessons as well as FRQ4. I'm a little proud of my work for FRQ4, which was a color gradient using iteration. Essentially the way it worked was: I used iteration to count the # of cells in the total 2D array. Based on the current index, the cell would be colored with a red value of ```255/# of total spaces * currentIndex``` and colored blue and green equally with a value of ```255/# of total spaces * 1-currentIndex```. This resulted in an aqua to red vertical gradient. I wanted to have the red and aqua values defined in the Light.java file, but it would only take either the first or last index #, not the current one. Becaue of this, I had to add the color values in LightBoard.java, meaning that the color codes would not update.
+
 ### Week 15
 This week was mostly me catching up on all the homework I've been behind on. When the homework and lessons happened last trimester, I was absent for a few days and I missed a few. Overall the homework/hacks were pretty easy, so this week wasn't too difficult. I also ended up doing the vocab on a bunch of java terms. I haven't done every single term, but I've done a good amount. I plan to finish that bit over the weekend most likely.
 
