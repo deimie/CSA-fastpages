@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -181,12 +181,101 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Enter binary input: 
-100
+10
 Enter another binary input: 
-1101
+01
 
 Your output is: 
-10001
+11
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.lang.Integer</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">binaryAdditionAlgo</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">binToDec</span><span class="p">(</span><span class="n">Integer</span> <span class="n">input</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// convert binary to decimal</span>
+        <span class="n">Integer</span> <span class="n">inputLen</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">toString</span><span class="p">().</span><span class="na">length</span><span class="p">();</span> <span class="c1">// length of input 1</span>
+        <span class="n">Integer</span> <span class="n">dec</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">tmp</span><span class="p">;</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">inputLen</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// will iterate for as many digits in binary input</span>
+            <span class="n">tmp</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">toString</span><span class="p">().</span><span class="na">substring</span><span class="p">(</span><span class="n">inputLen</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">i</span><span class="p">,</span><span class="n">inputLen</span><span class="o">-</span><span class="n">i</span><span class="p">);</span> <span class="c1">// starts iterating from the last digit of binary moving backwards</span>
+            <span class="n">dec</span> <span class="o">+=</span> <span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">i</span><span class="p">);</span> <span class="c1">// adds up each iteration of the current binary digit * 2^i</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">dec</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">decToBin</span><span class="p">(</span><span class="n">Integer</span> <span class="n">input</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Integer</span> <span class="n">mod</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">output</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">input</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">mod</span> <span class="o">=</span> <span class="n">input</span> <span class="o">%</span> <span class="mi">2</span><span class="p">;</span>
+            <span class="n">input</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="n">input</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">output</span><span class="p">.</span><span class="na">concat</span><span class="p">(</span><span class="n">mod</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span> <span class="c1">// concat each modulo to final string</span>
+            
+        <span class="p">}</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">(</span><span class="n">output</span><span class="p">).</span><span class="na">reverse</span><span class="p">().</span><span class="na">toString</span><span class="p">();</span> <span class="c1">// reverse string</span>
+        <span class="k">return</span> <span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">output</span><span class="p">);</span> <span class="c1">// return string parsed back to int</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span> <span class="c1">// scanner object</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter binary input: &quot;</span><span class="p">);</span>
+        <span class="n">Integer</span> <span class="n">dec1</span> <span class="o">=</span> <span class="n">binToDec</span><span class="p">(</span><span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">());</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Input as decimal: &quot;</span> <span class="o">+</span> <span class="n">dec1</span><span class="p">);</span>
+        
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter another binary input: &quot;</span><span class="p">);</span>
+        <span class="n">Integer</span> <span class="n">dec2</span> <span class="o">=</span> <span class="n">binToDec</span><span class="p">(</span><span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">());</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;input as decimal: &quot;</span> <span class="o">+</span> <span class="n">dec2</span><span class="p">);</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+
+        <span class="n">Integer</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">decToBin</span><span class="p">(</span><span class="n">dec1</span><span class="o">+</span><span class="n">dec2</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Your output is: &quot;</span> <span class="o">+</span> <span class="n">sum</span><span class="p">);</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="n">binaryAdditionAlgo</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>69 in binary is: 1000101
+Enter binary input: 
+Input as decimal: 2
+Enter another binary input: 
+input as decimal: 1
+
+Your output is: 11
 </pre>
 </div>
 </div>
