@@ -129,8 +129,7 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Generics">Generics<a class="anchor-link" href="#Generics"> </a></h3><p>A generic is a way to declare that the parameter data type for either methods, classes, or intefaces is unknown, and allows them to handle different types of data. Generics allow us to use methods,classes and interfaces in a more generalized way, instead of limiting ourselves to certain data types. Note that T is a placeholder, and can be replaced with almost anything so long as it is not a data type (int, char, etc...).</p>
-
+<h3 id="Mort's-Original-Code">Mort's Original Code<a class="anchor-link" href="#Mort's-Original-Code"> </a></h3>
 </div>
 </div>
 </div>
@@ -503,6 +502,27 @@ Integers count: 10, data: 0 1 2 3 4 5 6 7 8 9
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Queues-and-Stacks">Queues and Stacks<a class="anchor-link" href="#Queues-and-Stacks"> </a></h3><p>A queue is an interface that orders data in a FIFO (first in first out) order. A stack is very similar, but instead works in a LIFO (last in first out) order.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Generics">Generics<a class="anchor-link" href="#Generics"> </a></h3><p>A generic is a way to declare that the parameter data type for either methods, classes, or intefaces is unknown, and allows them to handle different types of data. Generics allow us to use methods,classes and interfaces in a more generalized way, instead of limiting ourselves to certain data types. Note that T is a placeholder, and can be replaced with almost anything so long as it is not a data type (int, char, etc...).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Challenge-1">Challenge 1<a class="anchor-link" href="#Challenge-1"> </a></h3><p>Add and Delete elements from Queue. Working with the code that is given, you will need to adjust Add and write Delete, to output from the Queue as follows.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -515,12 +535,12 @@ Integers count: 10, data: 0 1 2 3 4 5 6 7 8 9
       <span class="n">QueueManager</span> <span class="n">qWords</span> <span class="o">=</span> <span class="k">new</span> <span class="n">QueueManager</span><span class="p">(</span><span class="s">&quot;Words&quot;</span><span class="p">);</span>   
       <span class="n">Object</span><span class="o">[]</span> <span class="n">words</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[]</span> <span class="p">{</span> <span class="s">&quot;word1&quot;</span><span class="p">,</span> <span class="s">&quot;word2&quot;</span><span class="p">,</span> <span class="s">&quot;word3&quot;</span><span class="p">,</span> <span class="s">&quot;word4&quot;</span><span class="p">,</span> <span class="s">&quot;word5&quot;</span><span class="p">,</span> <span class="s">&quot;word6&quot;</span><span class="p">,</span> <span class="s">&quot;word7&quot;</span><span class="p">};</span>
   
-      <span class="k">for</span> <span class="p">(</span><span class="n">Object</span> <span class="n">word</span> <span class="p">:</span> <span class="n">words</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span><span class="n">Object</span> <span class="n">word</span> <span class="p">:</span> <span class="n">words</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// progressively adds words to the queue until all words have been added</span>
         <span class="n">qWords</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">word</span><span class="p">);</span>
         <span class="n">qWords</span><span class="p">.</span><span class="na">printQueue</span><span class="p">();</span>
       <span class="p">}</span>
   
-      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">words</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">words</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// progressively deletes words from queue</span>
         <span class="n">qWords</span><span class="p">.</span><span class="na">delete</span><span class="p">();</span>
         <span class="n">qWords</span><span class="p">.</span><span class="na">printQueue</span><span class="p">();</span>
       <span class="p">}</span>
