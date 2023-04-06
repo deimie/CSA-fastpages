@@ -559,35 +559,21 @@ Integers count: 10, data: 0 1 2 3 4 5 6 7 8 9
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Enqueued data: word1
-Words count: 1, data: word1 
-Enqueued data: word2
-Words count: 2, data: word1 word2 
-Enqueued data: word3
-Words count: 3, data: word1 word2 word3 
-Enqueued data: word4
-Words count: 4, data: word1 word2 word3 word4 
-Enqueued data: word5
-Words count: 5, data: word1 word2 word3 word4 word5 
-Enqueued data: word6
-Words count: 6, data: word1 word2 word3 word4 word5 word6 
-Enqueued data: word7
-Words count: 7, data: word1 word2 word3 word4 word5 word6 word7 
-Dequeued data: word1
-Words count: 6, data: word2 word3 word4 word5 word6 word7 
-Dequeued data: word2
-Words count: 5, data: word3 word4 word5 word6 word7 
-Dequeued data: word3
-Words count: 4, data: word4 word5 word6 word7 
-Dequeued data: word4
-Words count: 3, data: word5 word6 word7 
-Dequeued data: word5
-Words count: 2, data: word6 word7 
-Dequeued data: word6
-Words count: 1, data: word7 
-Dequeued data: word7
-Words count: 0, data: 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">      </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">QueueManager</span><span class="ansi-black-intense-fg ansi-bold"> qWords = new QueueManager(&#34;Words&#34;);   </span>
+<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
+<span class="ansi-red-intense-fg ansi-bold">  symbol:   class QueueManager</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">      QueueManager qWords = new </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">QueueManager</span><span class="ansi-black-intense-fg ansi-bold">(&#34;Words&#34;);   </span>
+<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
+<span class="ansi-red-intense-fg ansi-bold">  symbol:   class QueueManager</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">      for (String word : </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">words</span><span class="ansi-black-intense-fg ansi-bold">) {</span>
+<span class="ansi-red-intense-fg ansi-bold">incompatible types: java.lang.Object cannot be converted to java.lang.String</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">          </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">wordStack.push(word)</span><span class="ansi-black-intense-fg ansi-bold">;</span>
+<span class="ansi-red-intense-fg ansi-bold">unchecked call to push(E) as a member of the raw type java.util.Stack</span>
 </pre>
 </div>
 </div>
